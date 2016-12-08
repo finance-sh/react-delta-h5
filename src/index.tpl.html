@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Delta UI</title>
+<script>
+(function(e,g){var j=e.document;var a=j.documentElement;var k=e.devicePixelRatio;var i=1;var b=1;function h(){var o=/iphone/gi.test(e.navigator.appVersion);if(o){if(k>=3){i=3}else{if(k===2){i=2}else{i=1}}}else{i=1}e.devicePixelRatioValue=i;b=1/i;var l=j.querySelector('meta[name="viewport"]');if(l){if(o){l.setAttribute("content","initial-scale="+b+", user-scalable=no")}else{l.setAttribute("content","width=device-width, initial-scale="+b+", maximum-scale="+b+", minimum-scale="+b+", user-scalable=no")}}else{var n=j.createElement("meta");n.setAttribute("name","viewport");if(o){n.setAttribute("content","initial-scale="+b+", user-scalable=no")}else{n.setAttribute("content","width=device-width, initial-scale="+b+", maximum-scale="+b+", minimum-scale="+b+", user-scalable=no")}if(a.firstElementChild){a.firstElementChild.appendChild(n)}else{var m=j.createElement("div");m.appendChild(n);j.write(m.innerHTML)}}}h();var f=100;function d(){var l;if(g.maxWidth){l=Math.min(a.getBoundingClientRect().width,g.maxWidth*i)}else{l=a.getBoundingClientRect().width}f=100*l/g.desinWidth;a.style.fontSize=f+"px";j.body&&(j.body.style.fontSize=g.baseFont/100+"rem");g.setRemCallback&&g.setRemCallback();g.newBase=f}var c;g.desinWidth=640;g.baseFont=24;g.reflow=function(){a.clientWidth};g.init=function(){e.addEventListener("resize",function(){clearTimeout(c);c=setTimeout(d,300)},false);e.addEventListener("pageshow",function(l){if(l.persisted){clearTimeout(c);c=setTimeout(d,300)}},false);if(j.readyState==="complete"){j.body.style.fontSize=g.baseFont/100+"rem"}else{j.addEventListener("DOMContentLoaded",function(l){j.body.style.fontSize=g.baseFont/100+"rem"},false)}d();a.setAttribute("data-dpr",i)};g.remToPx=function(l){return l*f}})(window,window.adaptive||(window.adaptive={}));
+window.adaptive.desinWidth = 750;
+// body 字体大小 会将body字体大小设置为 baseFont / 100 + 'rem'
+window.adaptive.baseFont = 28;
+window.adaptive.init();
+</script>
+<style>
+.delta-bx .delta-hd{line-height:1.5rem;font-size:.52rem;color:#E94643;text-align:center}
+</style>
+</head>
+<body>
+<div id="du-app" class="du-app"></div>
+</body>
+</html>

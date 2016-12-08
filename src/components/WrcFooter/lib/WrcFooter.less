@@ -1,0 +1,38 @@
+@import "../../Less/base/fn";
+
+.du-footer {
+    color: @globalTextColorGray;
+    font-size: @globalFontSize;
+    text-align: center;
+    a{
+        color: @globalLinkColor;
+    }
+}
+.du-footer-fixed-bottom {
+    position: fixed;
+    bottom: @duFooterFixedBottom;
+    left: 0;
+    right: 0;
+}
+.du-footer-links {
+    font-size: 0;
+}
+.du-footer-link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 .6em;
+    position: relative;
+    font-size: @globalFontSize;
+    &:before {
+        .setLeftLine();
+        left: -.65em;
+    }
+    &:first-child {
+        &:before{
+            display: none;
+        }
+    }
+}
+.du-footer-text {
+    font-size: @globalFontSize;
+}

@@ -1,0 +1,59 @@
+@import "../../Less/base/fn";
+
+.du-item{
+    padding: @duItemPadding;
+    position: relative;
+    min-height: @duItemHeight;
+    &:after {
+        .setBottomLine(@duItemLineColor);
+        left: @duItemLineLeft;
+    }
+    &:last-child {
+        &:after {
+            display: none;
+        }
+    }
+    &.du-item-link{
+        padding: 0;
+    }
+
+    & .du-item-before{
+        flex: 1 1 0;
+        padding-right: @duItemTitlePaddingRight;
+    }
+    & .du-item-after .du-icon-arrow-right{
+        font-size: @duIconFontSize;
+        color: @duIconColor;
+    }
+
+    &.du-item-column{
+        align-items: inherit;
+        flex-direction: column;
+    }
+
+    &.du-item-start{
+        align-items: flex-start;
+    }
+
+    &.du-item-side{
+        .du-item-before{
+            flex: none;
+            padding-right: @duItemSidePaddingRight;
+        }
+        .du-item-after{
+            flex: 1;
+        }
+    }
+}
+
+.du-item,
+.du-item-link>a{
+    align-items: center;
+    display: flex;
+}
+
+.du-item-link>a{
+    padding: @duItemPadding;
+    min-height: @duItemHeight;
+    width: 100%
+}
