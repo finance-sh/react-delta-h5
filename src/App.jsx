@@ -4,7 +4,7 @@ import Router from 'react-router/lib/Router';
 import browserHistory from 'react-router/lib/browserHistory';
 import Routes from './Routes';
 
-import'./components/Less/delta.less';
+import'./components/Delta/delta.less';
 import'./components/System/Icon/lib/Icon.less';
 
 var App = React.createClass({

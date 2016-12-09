@@ -47,6 +47,7 @@ const TabBarPage = React.createClass({
                     onClick={e=>alert(1)} 
                     icon={<img src={testIcon}/>}
                     />
+
                     <TabBarItem 
                         active={true}
                         label="Tab2" 
