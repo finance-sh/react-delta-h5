@@ -7,6 +7,7 @@ import React from 'react';
 import style from './List.useable.less';
 import SystemHeader from '../../components/system/Header/Header';
 
+
 const ListPage = React.createClass({
 
     componentWillMount: function () {
@@ -17,6 +18,7 @@ const ListPage = React.createClass({
     componentWillUnmount: function () {
         style.unuse();
     },
+
     render: function () {
         var that = this;
         return (

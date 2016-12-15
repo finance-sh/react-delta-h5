@@ -9,6 +9,7 @@ var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
+var px2rem = require('postcss-plugin-px2rem');
 
 // 一些路径信息
 var ROOT_PATH = path.resolve(__dirname);
@@ -69,9 +70,17 @@ module.exports = {
             }
         ]
     },
-    postcss: [
-        autoprefixer
-    ],
+
+    postcss: function() {
+        var px2remOpts = {
+            minPixelValue: 2
+        };
+        return [
+            px2rem(px2remOpts),
+            autoprefixer
+        ];
+    },
+
     // 在JS中import加载jsx这种扩展名
     resolve: {
         root: path.resolve(ROOT_PATH, 'app'),

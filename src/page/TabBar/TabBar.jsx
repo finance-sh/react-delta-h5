@@ -28,6 +28,10 @@ const TabBarPage = React.createClass({
     },
     render: function () {
         var that = this;
+        var TPL = '';
+        for(var i=0;i<=20;i++) {
+            TPL += "<div style=text-align:center>内容" + i + ",共20个</div>";
+        }
         return (
             <div className="du-page-tabbar">
 
@@ -36,7 +40,7 @@ const TabBarPage = React.createClass({
                 <div className="du-page-bd">
                     <div className="du-page-bd-inner">
                         <div className="tabbar-section">
-                            <div style={{height:'30rem',textAlign:'center'}}>内容</div>
+                            <div dangerouslySetInnerHTML={{__html: TPL}}></div>,
                         </div>
                     </div>
                 </div>

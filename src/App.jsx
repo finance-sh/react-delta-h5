@@ -10,7 +10,7 @@ import'./components/System/Icon/lib/Icon.less';
 var App = React.createClass({
     render: function() {
         return (
-            <div className="du-page-outer" style={{width: '100%', height: '100%', overflow: 'hidden'}}>
+            <div className="du-page-outer">
                 {this.props.children}
             </div>
         );

@@ -4,6 +4,7 @@
  */
 
 import Layer from '../../WrcLayer/lib/WrcLayer';
+import './WrcLayer.less';
 
 function loading() {
     let optionsLoading = {
