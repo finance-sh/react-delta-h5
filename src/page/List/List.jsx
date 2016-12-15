@@ -7,7 +7,6 @@ import React from 'react';
 import style from './List.useable.less';
 import SystemHeader from '../../components/system/Header/Header';
 
-
 const ListPage = React.createClass({
 
     componentWillMount: function () {
