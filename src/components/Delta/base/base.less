@@ -7,7 +7,7 @@ select{background-color:transparent}
 input{border-radius:0}
 a{text-decoration:none;color:@globalLinkColor}
 html,body{
-    .setFull();
+    height: 100%
 }
 html{
     -ms-text-size-adjust: 100%;
@@ -34,32 +34,14 @@ body {
 }
 
 .du-app{
-    .setFull();
-    & .du-page-outer > [class|=du-page],
-    & > [class|=du-page] {
-        display: flex;
-        flex-direction: column;
-        .setFull();
-    }
     .du-page-hd {
-       flex: 0 0 auto;
-    }
-    .du-page-bd {
-        max-height: 100%;
-        height: 100%;
-        flex: 1 1 0;
-        overflow: hidden;
-        position: relative;
-    }
-    .du-page-bd-inner {
-        // -webkit-overflow-scrolling: touch;
-        position: absolute;
-        left: 0;
+        position: fixed;
         top: 0;
+        left: 0;
         width: 100%;
-        height: 100%;
-        overflow-x: hidden;
-        overflow-y: scroll;
+    }
+    .du-page-hd + .du-page-bd {
+        padding-top: @globalHeaderHeight;
     }
 }
 

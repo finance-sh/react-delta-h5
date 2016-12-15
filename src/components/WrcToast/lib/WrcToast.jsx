@@ -9,6 +9,7 @@
  */
 
 import Layer from '../../WrcLayer/lib/WrcLayer';
+import './WrcToast.less';
 
 function toast(str, outTime) {
 	var toastOptions = {

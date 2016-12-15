@@ -18,6 +18,7 @@ const ListPage = React.createClass({
     componentWillUnmount: function () {
         style.unuse();
     },
+
     render: function () {
         var that = this;
         return (

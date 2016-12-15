@@ -1,8 +1,14 @@
 @import "../../Delta/base/fn";
 
+.du-page-bd {
+    padding-bottom: @duTabBarHeight;       
+}
+
 .du-tabbar {
-    display: flex;
-    flex-direction: column;
+    height: @duTabBarHeight;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
     background-color: @duTabBarbackGroundColor;
 }

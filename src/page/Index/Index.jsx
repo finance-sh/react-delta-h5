@@ -51,6 +51,9 @@ const IndexPage = React.createClass({
                                         <div className="col"><Link to="/dialog"><i className="du-system-iconfont du-system-icon-dialog"></i>dialog</Link></div>
                                         <div className="col"><Link to="/toast"><i className="du-system-iconfont du-system-icon-toast"></i>toast</Link></div>
 
+                                        <div className="col"><Link to="/actionsheet"><i className="du-system-iconfont du-system-icon-sheet"></i>sheet</Link></div>
+                                        <div className="col"><Link to="/infinite"><i className="du-system-iconfont du-system-icon-infinite"></i>infinite</Link></div>
+
                                     </div>
                                 </div>
                             </div>
