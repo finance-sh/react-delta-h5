@@ -1,5 +1,5 @@
 {
-  "name": "zhongchou",
+  "name": "react",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
@@ -44,7 +44,8 @@
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.1",
     "webpack-zepto": "0.0.1",
-    "postcss-plugin-px2rem": "^0.6.0"
+    "postcss-plugin-px2rem": "^0.6.0",
+    "px-rem": "*"
   },
   "dependencies": {
     "classnames": "^2.2.5"

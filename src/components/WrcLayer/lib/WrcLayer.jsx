@@ -106,8 +106,8 @@ var ToastComponent = React.createClass({
     },
     render: function() {
         return (
-            <div className="du-dialog du-dialog-toast">
-                <div className="du-dialog-bd">{this.props.toastStr}</div>
+            <div className="du-toast">
+                <div className="du-toast-bd">{this.props.toastStr}</div>
             </div>
         )
     }

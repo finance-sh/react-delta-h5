@@ -1,8 +1,9 @@
 @import "../../Delta/base/fn";
 
+/*==shade==*/ 
 .du-loading-shade {
     position: fixed;
-    z-index: 9998;
+    z-index: 9999;
     top: 0;
     left: 0;
     width: 100%;
@@ -10,36 +11,34 @@
     opacity: 1;
     background: @duLoadingshadeBackgroundColor;
 }
-
-.du-loading {
-    .du-loading-bd {
-        top: 50%;
-        left: 50%;
-        position: fixed;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        line-height: normal;
-        border-radius: @duLoadingBdBorderRadius;
-        padding: @duLoadingBdPadding;
-        background: @duLoadingBdBackGround;
-    }
-    .du-loading-snake {
-        border-radius: 50%;
-        display: inline-block;
-        animation: du-spinner-rotate 0.8s infinite linear;
-        border: @duLoadingSnakeBorderWidth solid transparent;
-        border-top-color: @duLoadingSnakeBorderColor;
-        border-left-color: @duLoadingSnakeBorderColor;
-        border-bottom-color: @duLoadingSnakeBorderColor;
-        width: @duLoadingSnakeWidth;
-        height: @duLoadingSnakeHeight;
-    }
-    .du-loading-text {
-        vertical-align: top;
-        display: inline-block;
-        color: #FFF;
-        text-align: center;
-        font-size: @duLoadingFontSize;
-        margin-left: @duLoadingTextMarginLeft;
-    }
+/*==loading==*/ 
+.du-loading-bd {
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: normal;
+    border-radius: @duLoadingBdBorderRadius;
+    padding: @duLoadingBdPadding;
+    background: @duLoadingBdBackGround;
+}
+.du-loading-snake {
+    border-radius: 50%;
+    display: inline-block;
+    animation: du-spinner-rotate 0.8s infinite linear;
+    border: @duLoadingSnakeBorderWidth solid transparent;
+    border-top-color: @duLoadingSnakeBorderColor;
+    border-left-color: @duLoadingSnakeBorderColor;
+    border-bottom-color: @duLoadingSnakeBorderColor;
+    width: @duLoadingSnakeWidth;
+    height: @duLoadingSnakeHeight;
+}
+.du-loading-text {
+    vertical-align: top;
+    display: inline-block;
+    color: #FFF;
+    text-align: center;
+    font-size: @duLoadingFontSize;
+    margin-left: @duLoadingTextMarginLeft;
 }
