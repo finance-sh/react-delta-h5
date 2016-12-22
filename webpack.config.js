@@ -51,7 +51,7 @@ module.exports = {
             {
                 test: /\.less$/,
                 exclude: /\.useable\.less$/,
-                loader: 'style!css!postcss!less'
+                loader: 'style!css!postcss!less!px-rem'
             },
             {
                 test: /\.useable\.less$/,
@@ -76,7 +76,7 @@ module.exports = {
             minPixelValue: 2
         };
         return [
-            px2rem(px2remOpts),
+            // px2rem(px2remOpts),
             autoprefixer
         ];
     },
@@ -116,6 +116,7 @@ module.exports = {
     },
 
     plugins: [
+        
         new ExtractTextPlugin('app.min.css'),
         // 把入口里面的数组打包成vendors.js
         new HtmlWebpackPlugin({

@@ -5,27 +5,23 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    z-index: 998;
+    z-index: 999;
     height: @duHeaderHeight;
     line-height: @duHeaderHeight;
     background-color: @duHeaderBackgroundColor;
-
     &:after {
         content: " ";
         .setBottomLine(@duHeaderLineColor);
     }
-
     .du-header-title,
     .du-header-return,
     .du-header-act {
         height: @duHeaderHeight;
-        // line-height: @duHeaderHeight;
         overflow: hidden;
         top: 0;
         position: absolute;
-        z-index: 999
+        z-index: 998
     }
-
     .du-header-title {
         color: @duHeaderTitleColor;
         font-size: @duHeaderTitleFontSize;
@@ -33,19 +29,17 @@
         left: 0;
         width: 100%
     }
-
     .du-header-return {
-        left: 0;
         padding: @duHeaderReturnPadding;
+        left: 0;
         .du-icon-arrow-left:before {
             font-size: @duHeaderReturnArrowFontSize;
             color: @duHeaderReturnArrowColor;
         }
     }
-
     .du-header-act {
-        right: 0;
         padding: @duHeaderActPadding;
         color: @duHeaderActColor;
+        right: 0;
     }
 }

@@ -2,8 +2,7 @@
  * @file
  * @author
  * Created by zhousheng on 2016/9/8
- */
-/*
+ * ----------------------------------
  * str {string} toast's text  
  * outTime {number} display time,in milliseconds
  */

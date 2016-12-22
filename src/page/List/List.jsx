@@ -134,7 +134,7 @@ const ListPage = React.createClass({
                                         <div className="du-panel-bd">
                                             <ul className="du-list">
 
-                                                <li className="du-item du-item-start">
+                                                <li className="du-item">
                                                     <div className="du-item-before">
                                                         <div>标题</div>
                                                         <div>文字说明,文字说明,文字说明,文字说明,文字说明,文字说明,文字说明</div>
