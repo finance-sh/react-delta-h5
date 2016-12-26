@@ -6,7 +6,7 @@
 
 import React from 'react';
 import withRouter from 'react-router/lib/withRouter';
-import '../../WrcHeader/lib/WrcHeader.less';
+import '../../WrcHeader/lib/Header.less';
 
 var Header = React.createClass({
     propTypes: {

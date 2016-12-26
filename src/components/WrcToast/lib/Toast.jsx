@@ -7,8 +7,8 @@
  * outTime {number} display time,in milliseconds
  */
 
-import Layer from '../../WrcLayer/lib/WrcLayer';
-import './WrcToast.less';
+import Layer from '../../WrcLayer';
+import './Toast.less';
 
 function toast(str, outTime) {
 	var toastOptions = {

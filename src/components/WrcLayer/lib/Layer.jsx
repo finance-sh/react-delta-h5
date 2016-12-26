@@ -14,7 +14,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './WrcLayer.less';
+import './Layer.less';
 
 var OlayComponent = React.createClass({
     componentDidMount: function() {
@@ -36,7 +36,7 @@ var OlayComponent = React.createClass({
     },
     render: function() {
         var height = Math.max(document.documentElement.offsetHeight, window.innerHeight);
-        var className = 'olay';
+        var className = '';
         if (this.props.type === 'loading') {
             className = 'du-loading-shade';
         }
@@ -62,8 +62,8 @@ var LayerComponent = React.createClass({
             return (
                 <div className="du-loading" ref="layer">
                     <div className="du-loading-bd">
-                        <LoadingIconComponent/>
-                        <LoadingTxtComponent/>
+                        <LoadingIconComponent />
+                        <LoadingTxtComponent />
                     </div>
                 </div>
             );
@@ -106,8 +106,10 @@ var ToastComponent = React.createClass({
     },
     render: function() {
         return (
-            <div className="du-toast">
-                <div className="du-toast-bd">{this.props.toastStr}</div>
+            <div className="du-toast-shade">
+                <div className="du-toast">
+                    <div className="du-toast-bd">{this.props.toastStr}</div>
+                </div>
             </div>
         )
     }

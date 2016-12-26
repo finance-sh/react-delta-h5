@@ -3,7 +3,7 @@
 /*==shade==*/ 
 .du-loading-shade {
     position: fixed;
-    z-index: 9999;
+    z-index: 9998;
     top: 0;
     left: 0;
     width: 100%;
@@ -12,10 +12,11 @@
     background: @duLoadingshadeBackgroundColor;
 }
 /*==loading==*/ 
-.du-loading-bd {
+.du-loading {
     top: 50%;
     left: 50%;
     position: fixed;
+    z-index: 9999;
     transform: translate(-50%, -50%);
     text-align: center;
     line-height: normal;
@@ -26,7 +27,7 @@
 .du-loading-snake {
     border-radius: 50%;
     display: inline-block;
-    animation: du-spinner-rotate 0.8s infinite linear;
+    animation: du-spinner-rotate @duLoadingSnakeSpeed infinite linear;
     border: @duLoadingSnakeBorderWidth solid transparent;
     border-top-color: @duLoadingSnakeBorderColor;
     border-left-color: @duLoadingSnakeBorderColor;

@@ -4,10 +4,11 @@
  */
 
 import React from 'react';
+import Wrap from '../../components/WrcWrap';
+import Dialog from '../../components/WrcDialog';
+
 import style from './Dialog.useable.less';
 import SystemHeader from '../../components/system/Header/Header';
-
-import Dialog from '../../components/WrcDialog/lib/WrcDialog';
 
 const DialogPage = React.createClass({
     componentWillMount: function () {
@@ -60,30 +61,22 @@ const DialogPage = React.createClass({
         var that = this;
         return (
             <div className="du-page-dialog">
-
                 <SystemHeader />
+                <Wrap>
+                    <section className="dialog-section">
 
-                <div className="du-page-bd">
-                    <div className="du-page-bd-inner">
-
-                        <section className="dialog-section">
-
-                            <div className="delta-bx">
-                                <h2 className="delta-hd">Dialog</h2>
-                                <div className="delta-bd">
-                                    <div className="case-1">
-                                        <a href="javascript:void(0)" className="du-button du-button-danger" onClick={this.case1}>confirm</a>
-                                        <a href="javascript:void(0)" className="du-button du-button-danger" onClick={this.case2}>alert</a>
-                                        <a href="javascript:void(0)" className="du-button du-button-danger" onClick={this.case3}>alert 多行</a>
-                                    </div>
+                        <div className="delta-bx">
+                            <h2 className="delta-hd">Dialog</h2>
+                            <div className="delta-bd">
+                                <div className="case-1">
+                                    <a href="javascript:void(0)" className="du-button du-button-danger" onClick={this.case1}>confirm</a>
+                                    <a href="javascript:void(0)" className="du-button du-button-danger" onClick={this.case2}>alert</a>
+                                    <a href="javascript:void(0)" className="du-button du-button-danger" onClick={this.case3}>alert 多行</a>
                                 </div>
                             </div>
-
-                        </section>
-
-                    </div>
-                </div>
-
+                        </div>
+                    </section>
+                </Wrap>
             </div>
         );
     }

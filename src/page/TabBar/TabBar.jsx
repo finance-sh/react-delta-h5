@@ -4,6 +4,8 @@
  */
 
 import React from 'react';
+import Wrap from '../../components/WrcWrap';
+
 import style from './TabBar.useable.less';
 import SystemHeader from '../../components/system/Header/Header';
 
@@ -12,7 +14,7 @@ import {
    TabBarItem,
    TabBarIcon,
    TabBarLabel
-} from '../../components/WrcTabBar/lib/WrcIndex';
+} from '../../components/WrcTabBar';
 
 import testIcon from './img/icon.png';
 
@@ -34,17 +36,12 @@ const TabBarPage = React.createClass({
         }
         return (
             <div className="du-page-tabbar">
-
                 <SystemHeader />
-
-                <div className="du-page-bd">
-                    <div className="du-page-bd-inner">
-                        <div className="tabbar-section">
-                            <div dangerouslySetInnerHTML={{__html: TPL}}></div>,
-                        </div>
+                <Wrap>
+                    <div className="tabbar-section">
+                        <div dangerouslySetInnerHTML={{__html: TPL}}></div>
                     </div>
-                </div>
-
+                </Wrap>
                 <TabBar>
                     <TabBarItem 
                     label="Tab1" 
@@ -64,7 +61,6 @@ const TabBarPage = React.createClass({
                         icon={<img src={testIcon}/>}
                     />
                 </TabBar>
-
             </div>
         );
     }

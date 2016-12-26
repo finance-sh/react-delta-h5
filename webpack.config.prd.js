@@ -18,7 +18,6 @@ var REACT = path.resolve(NODE_PATH, 'react/dist/react.min.js');
 var REACTDOM = path.resolve(NODE_PATH, 'react-dom/dist/react-dom.min.js');
 var fs = require('fs');
 
-
 module.exports = {
     context: path.join(__dirname, 'app'),
     entry: {
