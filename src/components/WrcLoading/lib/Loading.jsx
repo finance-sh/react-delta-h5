@@ -3,8 +3,8 @@
  * @author
  */
 
-import Layer from '../../WrcLayer/lib/WrcLayer';
-import './WrcLoading.less';
+import Layer from '../../WrcLayer';
+import './Loading.less';
 
 function loading() {
     let optionsLoading = {

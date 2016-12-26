@@ -4,10 +4,11 @@
  */
 
 import React from 'react';
+import Wrap from '../../components/WrcWrap';
+import Loading from '../../components/WrcLoading';
+
 import style from './Loading.useable.less';
 import SystemHeader from '../../components/system/Header/Header';
-
-import Loading from '../../components/WrcLoading/lib/WrcLoading';
 
 const LoadingPage = React.createClass({
 
@@ -23,29 +24,25 @@ const LoadingPage = React.createClass({
         var loadingLayer = Loading();
         setTimeout(function() {
             loadingLayer.closeLayer();
-        }, 3000);
+        }, 5000);
     },
     render: function () {
         var that = this;
         return (
             <div className="du-page-loading">
-
                 <SystemHeader />
-
-                <div className="du-page-bd">
-                    <div className="du-page-bd-inner">
-                        <section className="loading-section">
-                            <div className="delta-bx">
-                                <h2 className="delta-hd">Loading</h2>
-                                <div className="delta-bd">
-                                    <div className="case-1">
-                                        <a href="javascript:void(0)" onClick={that.case1} className="du-button du-button-danger">带文字</a>
-                                    </div>
+                <Wrap>
+                    <section className="loading-section">
+                        <div className="delta-bx">
+                            <h2 className="delta-hd">Loading</h2>
+                            <div className="delta-bd">
+                                <div className="case-1">
+                                    <a href="javascript:void(0)" onClick={that.case1} className="du-button du-button-danger">带文字</a>
                                 </div>
                             </div>
-                        </section>
-                    </div>
-                </div>
+                        </div>
+                    </section>
+                </Wrap>
             </div>
         );
     }

@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import './WrcTabBar.less';
+import './TabBar.less';
 
 export default class TabBar extends React.Component {
 

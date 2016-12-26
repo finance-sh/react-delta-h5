@@ -51,7 +51,7 @@ module.exports = {
             {
                 test: /\.less$/,
                 exclude: /\.useable\.less$/,
-                loader: 'style!css!postcss!less!px-rem'
+                loader: 'style!css!px-rem!postcss!less'
             },
             {
                 test: /\.useable\.less$/,
@@ -116,9 +116,7 @@ module.exports = {
     },
 
     plugins: [
-        
-        new ExtractTextPlugin('app.min.css'),
-        // 把入口里面的数组打包成vendors.js
+                // 把入口里面的数组打包成vendors.js
         new HtmlWebpackPlugin({
             title: 'delta ui',
             template: path.join(__dirname, './src/index.tpl.html'),

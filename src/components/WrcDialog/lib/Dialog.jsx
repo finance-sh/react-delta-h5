@@ -4,8 +4,8 @@
  */
 
 
-import Layer from '../../WrcLayer/lib/WrcLayer';
-import './WrcDialog.less';
+import Layer from '../../WrcLayer';
+import './Dialog.less';
 
 function dialog(tpl) {
     let options = {
