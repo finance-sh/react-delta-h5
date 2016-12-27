@@ -4,10 +4,11 @@
  */
 
 import React from 'react';
-import Wrap from '../../components/WrcWrap';
-
+import DuWrap from '../../components/WrcDuWrap';
+// 非UI框架引用
 import style from './Flex.useable.less';
-import SystemHeader from '../../components/system/Header/Header';
+import SystemHeader from '../../components/system/SystemHeader/SystemHeader';
+import SystemWrap from '../../components/system/SystemWrap/SystemWrap';
 
 const FlexPage = React.createClass({
 
@@ -24,40 +25,35 @@ const FlexPage = React.createClass({
         return (
             <div className="du-page-flex">
                 <SystemHeader />
-                <Wrap>
-                    <section className="flex-section">
-                        <div className="delta-bx">
-                            <h2 className="delta-hd">Flex</h2>
-                            <div className="delta-bd">
-                                <div className="case-1">
-                                    <div className="du-flex">
-                                        <div className="du-flex-item"><div className="placeholder">delta</div></div>
-                                    </div>
-                                    <div className="du-flex">
-                                        <div className="du-flex-item"><div className="placeholder">delta</div></div>
-                                        <div className="du-flex-item"><div className="placeholder">delta</div></div>
-                                    </div>
-                                    <div className="du-flex">
-                                        <div className="du-flex-item"><div className="placeholder">delta</div></div>
-                                        <div className="du-flex-item"><div className="placeholder">delta</div></div>
-                                        <div className="du-flex-item"><div className="placeholder">delta</div></div>
-                                    </div>
-                                    <div className="du-flex">
-                                        <div className="du-flex-item"><div className="placeholder">delta</div></div>
-                                        <div className="du-flex-item"><div className="placeholder">delta</div></div>
-                                        <div className="du-flex-item"><div className="placeholder">delta</div></div>
-                                        <div className="du-flex-item"><div className="placeholder">delta</div></div>
-                                    </div>
-                                    <div className="du-flex">
-                                        <div><div className="placeholder">delta</div></div>
-                                        <div className="du-flex-item"><div className="placeholder">delta</div></div>
-                                        <div><div className="placeholder">delta</div></div>
-                                    </div>
-                                </div>
+                <DuWrap>
+                    <SystemWrap pageName="Flex">
+                        <div className="case-1">
+                            <div className="du-flex">
+                                <div className="du-flex-item"><div className="placeholder">delta</div></div>
+                            </div>
+                            <div className="du-flex">
+                                <div className="du-flex-item"><div className="placeholder">delta</div></div>
+                                <div className="du-flex-item"><div className="placeholder">delta</div></div>
+                            </div>
+                            <div className="du-flex">
+                                <div className="du-flex-item"><div className="placeholder">delta</div></div>
+                                <div className="du-flex-item"><div className="placeholder">delta</div></div>
+                                <div className="du-flex-item"><div className="placeholder">delta</div></div>
+                            </div>
+                            <div className="du-flex">
+                                <div className="du-flex-item"><div className="placeholder">delta</div></div>
+                                <div className="du-flex-item"><div className="placeholder">delta</div></div>
+                                <div className="du-flex-item"><div className="placeholder">delta</div></div>
+                                <div className="du-flex-item"><div className="placeholder">delta</div></div>
+                            </div>
+                            <div className="du-flex">
+                                <div><div className="placeholder">delta</div></div>
+                                <div className="du-flex-item"><div className="placeholder">delta</div></div>
+                                <div><div className="placeholder">delta</div></div>
                             </div>
                         </div>
-                    </section>
-                </Wrap>
+                    </SystemWrap>
+                </DuWrap>
             </div>
         );
     }

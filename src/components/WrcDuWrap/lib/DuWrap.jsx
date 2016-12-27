@@ -1,7 +1,11 @@
+/**
+ * @file   DuWrap
+ * @author zhong
+ */
+
 import React from 'react';
 
-export default class Wrap extends React.Component {
-
+export default class DuWrap extends React.Component {
     render() {
         const {children} = this.props;
         return (
@@ -12,5 +16,4 @@ export default class Wrap extends React.Component {
             </div>
         );
     }
-    
 }
