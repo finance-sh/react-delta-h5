@@ -40,7 +40,7 @@ var Header = React.createClass({
         var headerTPL;
         if(this.props.returnBtnDisplay) {
             returnNode = (
-                <a title="返回" className="du-header-return" href="javascript:void(0)" onClick={this.backEvent}><i className="du-iconfont du-icon-arrow-left"></i></a>
+                <a title="返回" className="du-header-return" href="javascript:void(0)" onClick={this.backEvent}><i className="du-iconfont du-icon-arrow-left-thick"></i></a>
             )
         };
         headerTPL = (

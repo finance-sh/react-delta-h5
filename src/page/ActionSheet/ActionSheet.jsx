@@ -10,7 +10,6 @@ import ActionSheet from '../../components/WrcActionSheet';
 import style from './ActionSheet.useable.less';
 import SystemHeader from '../../components/system/SystemHeader/SystemHeader';
 import SystemWrap from '../../components/system/SystemWrap/SystemWrap';
-
 class ActionSheetPage extends React.Component {
     constructor(props) {
         super(props);
@@ -52,15 +51,24 @@ class ActionSheetPage extends React.Component {
             isShow: !now
         });
     }
-
+    componentWillMount() {
+        style.use();
+    }
+    componentDidMount() {
+    }
+    componentWillUnmount() {
+        style.unuse();
+    }
     render() {
         return (
             <div className="du-page-button">
                 <SystemHeader />
                 <DuWrap>
                     <SystemWrap pageName="ActionSheet">
-                        <div className="with-out-x" onClick={this.openSheetWithBlur.bind(this)}>blur的shit</div>
-                        <div className="with-x" onClick={this.openSheetWithoutBlur.bind(this)}>no blur的shit</div>
+                        <div className="case-1">
+                            <a href="javascript:void(0)" onClick={this.openSheetWithBlur.bind(this)} className="du-button du-button-danger">blur的shit</a>
+                            <a href="javascript:void(0)" onClick={this.openSheetWithoutBlur.bind(this)} className="du-button du-button-danger">no blur的shit</a>
+                        </div>
                         <ActionSheet {...this.state} toggle={this._toggle}/>
                     </SystemWrap>
                 </DuWrap>

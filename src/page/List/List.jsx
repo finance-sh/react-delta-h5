@@ -155,8 +155,7 @@ const ListPage = React.createClass({
                                             <div>文字说明,文字说明,文字说明,文字说明,文字说明,文字说明,文字说明</div>
                                         </div>
                                         <div className="du-item-after">
-                                            <span>说明</span> 
-                                            <span className="du-iconfont du-icon-arrow-right"></span>
+                                            <span>说明</span>
                                         </div>
                                     </li>                    
                                     <li className="du-item du-item-start">
@@ -165,8 +164,7 @@ const ListPage = React.createClass({
                                             <div>文字说明,文字说明,文字说明,文字说明,文字说明,文字说明,文字说明</div>
                                         </div>
                                         <div className="du-item-after">
-                                            <span>说明</span> 
-                                            <span className="du-iconfont du-icon-arrow-right"></span>
+                                            <span>说明</span>
                                         </div>
                                     </li>                    
                                     <li className="du-item du-item-start">
@@ -175,8 +173,7 @@ const ListPage = React.createClass({
                                             <div>文字说明,文字说明,文字说明,文字说明,文字说明,文字说明,文字说明</div>
                                         </div>
                                         <div className="du-item-after">
-                                            <span>说明</span> 
-                                            <span className="du-iconfont du-icon-arrow-right"></span>
+                                            <span>说明</span>
                                         </div>
                                     </li>                    
                                     <li className="du-item du-item-start">
@@ -185,8 +182,7 @@ const ListPage = React.createClass({
                                             <div>文字说明,文字说明,文字说明,文字说明,文字说明,文字说明,文字说明</div>
                                         </div>
                                         <div className="du-item-after">
-                                            <span>说明</span> 
-                                            <span className="du-iconfont du-icon-arrow-right"></span>
+                                            <span>说明</span>
                                         </div>
                                     </li>
 
