@@ -4,11 +4,12 @@
  */
 
 import React from 'react';
-import Wrap from '../../components/WrcWrap';
+import DuWrap from '../../components/WrcDuWrap';
 import Loading from '../../components/WrcLoading';
-
+// 非UI框架引用
 import style from './Loading.useable.less';
-import SystemHeader from '../../components/system/Header/Header';
+import SystemHeader from '../../components/system/SystemHeader/SystemHeader';
+import SystemWrap from '../../components/system/SystemWrap/SystemWrap';
 
 const LoadingPage = React.createClass({
 
@@ -31,18 +32,13 @@ const LoadingPage = React.createClass({
         return (
             <div className="du-page-loading">
                 <SystemHeader />
-                <Wrap>
-                    <section className="loading-section">
-                        <div className="delta-bx">
-                            <h2 className="delta-hd">Loading</h2>
-                            <div className="delta-bd">
-                                <div className="case-1">
-                                    <a href="javascript:void(0)" onClick={that.case1} className="du-button du-button-danger">带文字</a>
-                                </div>
-                            </div>
+                <DuWrap>
+                    <SystemWrap pageName="Loading">
+                        <div className="case-1">
+                            <a href="javascript:void(0)" onClick={that.case1} className="du-button du-button-danger">带文字</a>
                         </div>
-                    </section>
-                </Wrap>
+                    </SystemWrap>
+                </DuWrap>
             </div>
         );
     }

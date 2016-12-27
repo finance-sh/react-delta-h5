@@ -4,10 +4,11 @@
  */
 
 import React from 'react';
-import Wrap from '../../components/WrcWrap';
-
+import DuWrap from '../../components/WrcDuWrap';
+// 非UI框架引用
 import style from './TabBar.useable.less';
-import SystemHeader from '../../components/system/Header/Header';
+import SystemHeader from '../../components/system/SystemHeader/SystemHeader';
+import SystemWrap from '../../components/system/SystemWrap/SystemWrap';
 
 import {
    TabBar,
@@ -37,11 +38,11 @@ const TabBarPage = React.createClass({
         return (
             <div className="du-page-tabbar">
                 <SystemHeader />
-                <Wrap>
-                    <div className="tabbar-section">
+                <DuWrap>
+                    <SystemWrap pageName="Tabbar">
                         <div dangerouslySetInnerHTML={{__html: TPL}}></div>
-                    </div>
-                </Wrap>
+                    </SystemWrap>
+                </DuWrap>
                 <TabBar>
                     <TabBarItem 
                     label="Tab1" 

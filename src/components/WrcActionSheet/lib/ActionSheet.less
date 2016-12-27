@@ -1,0 +1,62 @@
+@import "../../Delta/base/fn";
+.wh(@w, @h) {
+    width: @w;
+    height: @h;
+}
+.btn() {
+    .wh(80%, 40px);
+    text-align: center;
+    background-color: #0f7595;
+    border-radius: 8px;
+    line-height: 40px;
+    color: white;
+    margin: 20px auto;
+}
+@durTime: .3s;
+@delayTime: 0;
+@sheetH: 200px;
+.action-sheet {
+    .sheet-part {
+        height: @sheetH;
+        position: fixed;
+        background: #e0e0e0;
+        width: 100%;
+        text-align: center;
+        bottom: -@sheetH;
+        transition: transform @durTime ease-out ;
+        -webkit-transition: transform @durTime ease-out ;
+        .sheet-close {
+            .wh(40px, 20px);
+            background-color: red;
+            float: right;
+        }
+        .sheet-content {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+    }
+    &.sheet-show {
+        .sheet-part {
+            z-index: 1001;
+            -webkit-transform: translate3d(0, -@sheetH, 0);
+            transform: translate3d(0, -@sheetH, 0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        .sheet-modal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            .wh(100%, 100%);
+            background: rgba(0,0,0,.5);
+        }
+    }
+}
+.with-out-x {
+    .btn();
+    margin-top: 100px;
+}
+.with-x {
+    .btn();
+}
