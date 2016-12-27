@@ -34,7 +34,6 @@
             flex: none;
             padding-right: @duItemSidePaddingRight;
         }
-
         .du-item-after {
             flex: 1;
         }
@@ -47,12 +46,13 @@
     padding-right: @duItemTitlePaddingRight;
 }
 
-.du-item-after .du-icon-arrow-right {
+.du-item-after [class^="du-icon"] {
     font-size: @duIconFontSize;
     color: @duIconColor;
 }
 
 .du-item,
+.du-item-after,
 .du-item-link > a {
     align-items: center;
     display: flex;

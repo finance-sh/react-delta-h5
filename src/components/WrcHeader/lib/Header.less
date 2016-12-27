@@ -32,9 +32,10 @@
     .du-header-return {
         padding: @duHeaderReturnPadding;
         left: 0;
-        .du-icon-arrow-left:before {
-            font-size: @duHeaderReturnArrowFontSize;
+        [class^="du-icon"]:before {
             color: @duHeaderReturnArrowColor;
+            font-size: @duHeaderReturnArrowFontSize;
+            font-weight: @duHeaderReturnArrowFontWeight;
         }
     }
     .du-header-act {
