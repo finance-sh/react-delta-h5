@@ -21,16 +21,15 @@ export default class ActionSheet extends React.Component {
     }
 
     render() {
-        let className = 'du-action-sheet' + (this.props.isShow ? ' du-action-sheet-show' : '');
+        let className = 'du-actionsheet' + (this.props.isShow ? ' du-actionsheet-show' : '');
         return (
             <div className={className}>
-                <div className="du-action-sheet-bd">
-                    <div className="du-action-sheet-bd-inner">
-                        main part
+                <div className="du-actionsheet-bd">
+                    <div className="du-actionsheet-bd-inner">
+                        {this.props.children}
                     </div>
-                    <div className="du-action-sheet-act" onClick={this.props.toggle}>close</div>
                 </div>
-                <div className="du-action-sheet-shade" onClick={this.handleClick.bind(this)}></div>
+                <div className="du-actionsheet-shade" onClick={this.handleClick.bind(this)}></div>
             </div>
         );
     }
