@@ -1,33 +1,40 @@
 @import "../../Delta/base/fn";
 
-.du-action-sheet-bd {
-    height: 200px;
+.du-actionsheet-bd {
     position: fixed;
-    background: #e0e0e0;
+    left: 0;
+    bottom: 0;
     width: 100%;
     text-align: center;
-    bottom: -200px;
     transition: transform .3s ease-out;
-}
-.du-action-sheet-act {
-    width: 80px;
-    height: 49px;
-    background-color: red;
-    float: right;
-}
-.du-action-sheet-bd-inner {
-    text-align: center;
-    margin-top: 30px;
-}
-.du-action-sheet-show {
-    .du-action-sheet-bd {
-        transform: translate3d(0, -200px, 0);
-        backface-visibility: hidden;
-        z-index: 9999;
+    transform: translate(0, 100%);
+    backface-visibility: hidden;    
+    background: #FFF;
+    .du-item,
+    .du-item-link > a {
+        justify-content: center
     }
-    .du-action-sheet-shade {
+    .du-item:after {
+        left: 0
+    }
+    .du-actionsheet-cancel:before {
+        .setTopLine(@duItemLineColor);
+        border-top-width: 4px
+    }
+}
+
+.du-actionsheet-bd-inner {
+    text-align: center
+}
+
+.du-actionsheet-show {
+    .du-actionsheet-bd {
+        transform: translate(0, 0);
+        z-index: 9999
+    }
+    .du-actionsheet-shade {
         .setShade();
-        background: rgba(0,0,0,.5);
-        z-index: 9998;
+        background: rgba(0, 0, 0, .5);
+        z-index: 9998
     }
 }

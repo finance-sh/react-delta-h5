@@ -10,6 +10,7 @@ import ActionSheet from '../../components/WrcActionSheet';
 import style from './ActionSheet.useable.less';
 import SystemHeader from '../../components/system/SystemHeader/SystemHeader';
 import SystemWrap from '../../components/system/SystemWrap/SystemWrap';
+
 class ActionSheetPage extends React.Component {
     constructor(props) {
         super(props);
@@ -61,17 +62,23 @@ class ActionSheetPage extends React.Component {
     }
     render() {
         return (
-            <div className="du-page-button">
+            <div className="du-page-actionsheet">
                 <SystemHeader />
                 <DuWrap>
                     <SystemWrap pageName="ActionSheet">
                         <div className="case-1">
-                            <a href="javascript:void(0)" onClick={this.openSheetWithBlur.bind(this)} className="du-button du-button-danger">blur的shit</a>
-                            <a href="javascript:void(0)" onClick={this.openSheetWithoutBlur.bind(this)} className="du-button du-button-danger">no blur的shit</a>
+                            <a href="javascript:void(0)" onClick={this.openSheetWithBlur.bind(this)} className="du-button du-button-danger">点击空白处关闭的 action sheet</a>
+                            <a href="javascript:void(0)" onClick={this.openSheetWithoutBlur.bind(this)} className="du-button du-button-danger">点击取消按钮关闭的 action sheet</a>
                         </div>
-                        <ActionSheet {...this.state} toggle={this._toggle}/>
                     </SystemWrap>
                 </DuWrap>
+                <ActionSheet {...this.state} toggle={this._toggle}>
+                    <ul className="du-actionsheet-list du-list">
+                        <li className="du-item du-item-link"><a href="#">实例菜单</a></li>
+                        <li className="du-item du-item-link"><a href="#">实例菜单</a></li>
+                    </ul>
+                    <div className="du-actionsheet-cancel du-item" onClick={this._toggle}>取消</div>
+                </ActionSheet>
             </div>
         );
     }
