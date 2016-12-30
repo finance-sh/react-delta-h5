@@ -47,7 +47,6 @@
     "react": "~15.3.1",
     "react-dom": "~15.3.1",
     "react-router": "^2.6.1",
-    "react-deltaui" : "~1.0.0",
     "classnames": "^2.2.5"
   }
 }
