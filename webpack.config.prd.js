@@ -1,6 +1,5 @@
 /**
  * @file   webpack.config.js
- * @author baidu.inc
  */
 
 var projectName = 'components-pc';
@@ -91,7 +90,7 @@ module.exports = {
             minimize: false
         }),
         new HtmlWebpackPlugin({
-            title: '模块管理系统',
+            title: 'Delta UI',
             template: path.join(__dirname, './app/index.tpl.html'),
             filename: './template/' + projectName + '/index.html',
             // chunks这个参数告诉插件要引用entry里面的哪几个入口

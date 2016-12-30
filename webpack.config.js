@@ -1,6 +1,5 @@
 /**
  * @file   webpack.config.js
- * @author baidu.inc
  */
 
 var path = require('path');

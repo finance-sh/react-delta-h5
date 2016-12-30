@@ -1,7 +1,6 @@
 /**
  * @file
  * @author liwencheng
- * baidu.inc
  */
 
 import React from 'react';

@@ -1,7 +1,6 @@
 /**
  * @file
  * @author
- * baidu.inc
  */
 /*
  * options {object}
