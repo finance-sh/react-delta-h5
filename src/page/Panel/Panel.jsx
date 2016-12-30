@@ -32,7 +32,7 @@ const PanelPage = React.createClass({
                                 <div className="du-item du-item-link">
                                     <a href="#" className="">
                                         <div className="du-item-before">A</div>
-                                        <div className="du-item-after"><span className="du-iconfont du-icon-arrow-right"></span></div>
+                                        <div className="du-item-after"><span className="du-iconfont du-icon-arrow-right-thick"></span></div>
                                     </a>
                                 </div>
                             </div>
@@ -104,7 +104,7 @@ const PanelPage = React.createClass({
                             <div className="du-item du-item-link">
                                 <a href="#" className="">
                                     <div className="du-item-before">标题-带链接</div>
-                                    <div className="du-item-after"><span className="du-iconfont du-icon-arrow-right"></span></div>
+                                    <div className="du-item-after"><span className="du-iconfont du-icon-arrow-right-thick"></span></div>
                                 </a>
                             </div>
                         </div>

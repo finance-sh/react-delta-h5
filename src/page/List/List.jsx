@@ -48,13 +48,13 @@ const ListPage = React.createClass({
                                     <li className="du-item du-item-link">
                                         <a href="#" className="">
                                             <div className="du-item-before">标题-带链接</div>
-                                            <div className="du-item-after"><span className="du-iconfont du-icon-arrow-right"></span></div>
+                                            <div className="du-item-after"><span className="du-iconfont du-icon-arrow-right-thick"></span></div>
                                         </a>
                                     </li>
                                     <li className="du-item du-item-link">
                                         <a href="#" className="">
                                             <div className="du-item-before">标题-带链接</div>
-                                            <div className="du-item-after"><span className="du-iconfont du-icon-arrow-right"></span></div>
+                                            <div className="du-item-after"><span className="du-iconfont du-icon-arrow-right-thick"></span></div>
                                         </a>
                                     </li>
                                     <li className="du-item du-item-link">
@@ -62,7 +62,7 @@ const ListPage = React.createClass({
                                             <div className="du-item-before">标题-带链接 标题文字长度很长长度很长长度很长长度很长</div>
                                             <div className="du-item-after">
                                                 <span>说明</span> 
-                                                <span className="du-iconfont du-icon-arrow-right"></span>
+                                                <span className="du-iconfont du-icon-arrow-right-thick"></span>
                                             </div>
                                         </a>
                                     </li>
@@ -78,7 +78,7 @@ const ListPage = React.createClass({
                                 <ul className="du-list">
                                     <li className="du-item">
                                         <div className="du-item-before">标题-无链接</div>
-                                        <div className="du-item-after"><span className="du-iconfont du-icon-arrow-right"></span></div>
+                                        <div className="du-item-after"><span className="du-iconfont du-icon-arrow-right-thick"></span></div>
                                     </li>
                                     <li className="du-item">
                                         <div className="du-item-before">标题-无链接</div>
@@ -135,7 +135,7 @@ const ListPage = React.createClass({
                                         </div>
                                         <div className="du-item-after">
                                             <span>说明</span> 
-                                            <span className="du-iconfont du-icon-arrow-right"></span>
+                                            <span className="du-iconfont du-icon-arrow-right-thick"></span>
                                         </div>
                                     </li>
 
