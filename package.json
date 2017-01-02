@@ -1,10 +1,10 @@
 {
   "name": "react-deltaui",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "常用的react组件",
   "main": "",
   "scripts": {
-    "dev": "webpack-dev-server --progress --profile --colors --hot --port 8080",
+    "dev": "webpack-dev-server --progress --profile --colors --hot --inline --port 8080",
     "winBuild": "SET BABEL_ENV=production && webpack --progress --profile --colors --config webpack.config.prd.js",
     "build": "BABEL_ENV=production && webpack --progress --profile --colors --config webpack.config.prd.js"
   },
@@ -26,27 +26,27 @@
     "eslint": "^1.10.3",
     "eslint-plugin-react": "^3.11.3",
     "exports-loader": "^0.6.3",
-    "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^2.14.0",
-    "less": "^2.5.3",
-    "less-loader": "^2.2.1",
     "open-browser-webpack-plugin": "0.0.1",
+    "postcss-import": "^9.0.0",
     "postcss-loader": "^0.8.2",
+    "precss": "^1.4.0",
+    "px-rem": "~1.1.2",
+    "postcss-plugin-px2rem": "^0.6.0",
     "source-map-loader": "^0.1.5",
     "style-loader": "^0.13.0",
     "uglify-loader": "^1.2.0",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.2",
-    "webpack-dev-server": "^1.12.1",
-    "postcss-plugin-px2rem": "^0.6.0",
-    "px-rem": "~1.1.2"
+    "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
+    "adaptive.js": "~0.0.1",
+    "classnames": "^2.2.5",
     "history": "^2.1.2",
     "react": "~15.3.1",
     "react-dom": "~15.3.1",
-    "react-router": "^2.6.1",
-    "classnames": "^2.2.5"
+    "react-router": "^2.6.1"
   }
 }

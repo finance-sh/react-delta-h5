@@ -1,0 +1,4 @@
+$duFooterFixedBottom        : 5px;
+$duFooterLinkMargin         : 0 .6em;
+$duFooterLinkBeforeLeft     : -.65em;
+$duFooterLinkBeforeTransform: scaleY(0.6);

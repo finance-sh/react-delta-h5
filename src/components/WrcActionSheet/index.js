@@ -1,5 +1,5 @@
 /**
- * Created by zhong
+ * Created by delta
  */
 
 import ActionSheet from './lib/ActionSheet';

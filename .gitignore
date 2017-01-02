@@ -1,4 +1,5 @@
-/node_modules
 # Created by .ignore support plugin (hsz.mobi)
+/node_modules
 /npm-debug.log
+/log.txt
 .idea

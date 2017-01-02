@@ -1,0 +1,9 @@
+@import "../../Delta/lib/fn.duss";
+
+.du-flex {
+    display: flex;
+}
+
+.du-flex-item {
+    flex: 1;
+}

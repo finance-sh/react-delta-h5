@@ -1,7 +1,6 @@
 /**
- * Created by zhong
+ * Created by delta
  */
-
 import TabBar from './lib/TabBar';
 import TabBarItem from './lib/TabBarItem';
 import TabBarIcon from './lib/TabBarIcon';

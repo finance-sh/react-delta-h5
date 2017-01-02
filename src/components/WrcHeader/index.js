@@ -1,5 +1,5 @@
 /**
- * Created by zhong
+ * Created by delta
  */
 
 import Header from './lib/Header';

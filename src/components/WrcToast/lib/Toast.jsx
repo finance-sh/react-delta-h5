@@ -1,16 +1,14 @@
 /**
- * @file
- * @author
- * Created by zhousheng on 2016/9/8
+ * Created by delta
  * ----------------------------------
  * str {string} toast's text  
  * outTime {number} display time,in milliseconds
  */
 
 import Layer from '../../WrcLayer';
-import './Toast.less';
+import './Toast.duss';
 
-function toast(str, outTime) {
+function Toast(str, outTime) {
 	var toastOptions = {
 	    type: 'toast',
 	    toastStr: str,
@@ -19,4 +17,4 @@ function toast(str, outTime) {
 	new Layer(toastOptions);
 }
 
-export default toast;
+export default Toast;

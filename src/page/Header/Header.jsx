@@ -1,13 +1,12 @@
 /**
- * @file   Header模块
- * @author zhong
+ * Created by delta
  */
 
 import React from 'react';
 import Header from '../../components/WrcHeader';
 import DuWrap from '../../components/WrcDuWrap';
 // 非UI框架引用
-import style from './Header.useable.less';
+import style from './Header.useable.duss';
 import SystemHeader from '../../components/system/SystemHeader/SystemHeader';
 import SystemWrap from '../../components/system/SystemWrap/SystemWrap';
 

@@ -1,13 +1,14 @@
+/**
+ * Created by delta
+ */
+
 import React from 'react';
 import classNames from 'classnames';
 import TabBarIcon from './TabBarIcon';
 import TabBarLabel from './TabBarLabel';
 
-/**
- *  Tabbar item
- *
- */
 export default class TabBarItem extends React.Component {
+    
     static propTypes = {
         active: React.PropTypes.bool,
         icon: React.PropTypes.any,

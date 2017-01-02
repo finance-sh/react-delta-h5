@@ -1,13 +1,12 @@
 /**
- * @file   首页
- * @author zhong
+ * Created by delta
  */
 
 import React from 'react';
 import Link from 'react-router/lib/Link';
 import DuWrap from '../../components/WrcDuWrap';
 // 非UI框架引用
-import style from './Index.useable.less';
+import style from './Index.useable.duss';
 import SystemHeader from '../../components/system/SystemHeader/SystemHeader';
 import SystemWrap from '../../components/system/SystemWrap/SystemWrap';
 

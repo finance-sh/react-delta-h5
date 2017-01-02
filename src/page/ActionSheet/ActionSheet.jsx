@@ -1,13 +1,12 @@
 /**
- * @file   ActionSheet 模块
- * @author liwencheng
+ * Created by delta
  */
 
 import React from 'react';
 import DuWrap from '../../components/WrcDuWrap';
 import ActionSheet from '../../components/WrcActionSheet';
 // 非UI框架引用
-import style from './ActionSheet.useable.less';
+import style from './ActionSheet.useable.duss';
 import SystemHeader from '../../components/system/SystemHeader/SystemHeader';
 import SystemWrap from '../../components/system/SystemWrap/SystemWrap';
 

@@ -1,132 +1,124 @@
 /**
- * @file   webpack.config.js
+ * Created by delta
  */
 
+var fs = require('fs');
 var path = require('path');
 var webpack = require('webpack');
-var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
+
+// path
+var ROOT_PATH = path.resolve(__dirname);
+var APP_PATH = path.resolve(ROOT_PATH, 'src');
+var NODE_MODULES_PATH = path.resolve(ROOT_PATH,'node_modules');
+var TEMPLATE_PATH = path.resolve(ROOT_PATH,'./src/index.tpl.html');
+var ADAPTIVE_PATH = path.resolve(NODE_MODULES_PATH,'adaptive.js/js/adaptive.js');
+
+// adaptive
+var adaptiveText = fs.readFileSync(ADAPTIVE_PATH,'utf8');
+
+// postcss
+var precss = require('precss');
+var autoprefixer = require('autoprefixer');
+var atImport = require("postcss-import");
 var px2rem = require('postcss-plugin-px2rem');
 
-// 一些路径信息
-var ROOT_PATH = path.resolve(__dirname);
-var NODE_PATH = path.resolve(ROOT_PATH, 'node_modules');
-var REACT = path.resolve(NODE_PATH, 'react/dist/react.js');
-var REACTDOM = path.resolve(NODE_PATH, 'react-dom/dist/react-dom.js');
-
 module.exports = {
-    context: path.join(__dirname, 'src'),
+
+    context: APP_PATH,
+
     // 获取项目入口JS文件
     entry: {
-        app: './App.jsx',
-        // adaptive: './component/tools/Adaptive/Adaptive.jsx'
+        app: './App.jsx'
     },
-    output: {
-        // 文件输出目录
-        path: path.resolve(__dirname, 'dist'),
-        // 根据entry的入口名称生成多个js文件
-        filename: '[name].js',
-        chunkFilename: '[name].chunk.js',
-        // 用于配置文件发布路径，如CDN或本地服务器
-        publicPath: '/'
-    },
+    
     // 各种加载器，让各种文件格式可用require引用
     module: {
-        noParse: [REACT],
-        // preLoaders: [
-        //     {
-        //         test: /\.js[x]?$/,
-        //         loader: 'source-map-loader'
-        //     }
-        // ],
         loaders: [
             {
-                test: /\.js[x]?$/,
-                exclude: /node_modules/,
-                loader: 'babel'
+                test: /\.duss$/,
+                loaders: [
+                    'style-loader',
+                    'css-loader',
+                    'postcss-loader'
+                ],
+                exclude: /\.useable\.duss|node_modules$/
             },
             {
-                test: /\.less$/,
-                exclude: /\.useable\.less$/,
-                loader: 'style!css!px-rem!postcss!less'
-            },
-            {
-                test: /\.useable\.less$/,
-                exclude: /node_modules/,
-                loader: 'style/useable!css!postcss!less'
-            },
-            {
-                test: /\.css/,
-                exclude: /node_modules/,
-                loader: ExtractTextPlugin.extract('style', 'css', 'postcss')
+                test: /\.useable\.duss$/,
+                loaders: [
+                    'style-loader/useable',
+                    'css-loader',
+                    'postcss-loader'
+                ],
+                exclude: /node_modules/
             },
             {
                 test: /\.(png|jpg)$/,
-                exclude: /node_modules/,
-                loader: 'url?limit=8192'
-            }
+                loader: 'url?limit=8192',
+                exclude: /node_modules/
+            },
+            {
+                test: /\.js[x]?$/,
+                loader: 'babel',
+                exclude: /node_modules/
+            },
         ]
     },
 
-    postcss: function() {
-        var px2remOpts = {
-            minPixelValue: 2
+    postcss: function(webpack) {
+        var option = {
+            px2rem: {
+                minPixelValue: 2
+            },
+            atImport: {
+                addDependencyTo: webpack
+            }
         };
         return [
-            // px2rem(px2remOpts),
-            autoprefixer
+            atImport(option.atImport),
+            precss,
+            autoprefixer,
+            px2rem(option.px2rem)
         ];
     },
 
-    // 在JS中import加载jsx这种扩展名
-    resolve: {
-        root: path.resolve(ROOT_PATH, 'app'),
-        extensions: [
-            '',
-            '.js',
-            '.jsx'
-        ],
-        // 配置别名，在项目中可缩减引用路径
-        alias: {
-            'react': REACT,
-            'react-dom': REACTDOM
-        }
-    },
-
-    // 生成sourcemap,便于开发调试
-    devtool: 'cheap-source-map',
     // enable dev server
     devServer: {
         historyApiFallback: true,
         hot: false,
         inline: true,
         progress: true,
-        // ajax 代理到5000端口
-        proxy: {
-            '/cf/**': {
-                target: 'http://127.0.0.1:5000',
-                // target: 'http://cp01-base-stable-spiderman.epc:8943',
-                secure: false
-            }
-        },
         host: '0.0.0.0'
     },
 
+    resolve: {
+        // 查找module的话从这里开始查找
+        root: path.resolve(ROOT_PATH, 'src'),
+         // 自动扩展文件后缀名，意味着我们require模块可以省略不写后缀名
+        extensions: [
+            '',
+            '.js',
+            '.jsx'
+        ]
+    },
+
+    // 生成sourcemap,便于开发调试
+    devtool: 'cheap-source-map',
+
     plugins: [
-                // 把入口里面的数组打包成vendors.js
         new HtmlWebpackPlugin({
-            title: 'delta ui',
-            template: path.join(__dirname, './src/index.tpl.html'),
+            title: 'Delta UI',
+            template: TEMPLATE_PATH,
             filename: 'index.html',
             // chunks这个参数告诉插件要引用entry里面的哪几个入口
             chunks: [
                 'app'
             ],
             inject: 'body',
-            chunksSortMode: 'dependency'
+            chunksSortMode: 'dependency',
+            adaptive: adaptiveText
         }),
-      
     ]
 };

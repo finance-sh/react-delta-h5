@@ -1,0 +1,3 @@
+/* 供组件引入*/
+@import "./mixins.duss";
+@import "./variables.duss";

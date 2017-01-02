@@ -1,0 +1,18 @@
+/* shade */
+$duLoadingshadeBackgroundColor: rgba(0, 0, 0, 0.2);
+
+/* loading-bd */
+$duLoadingBdBackGround        : rgba(0, 0, 0, 0.7);
+$duLoadingBdPadding           : 20px 30px;
+$duLoadingBdBorderRadius      : 5px;
+
+/* snake */
+$duLoadingSnakeBorderColor    : rgb(204,204,204);
+$duLoadingSnakeBorderWidth    : 2px;
+$duLoadingSnakeWidth          : 35px;
+$duLoadingSnakeHeight         : 35px;
+$duLoadingSnakeSpeed          : 1.2s;
+
+/* text  */
+$duLoadingTextMarginLeft      : 10px;
+$duLoadingFontSize            : 28px;

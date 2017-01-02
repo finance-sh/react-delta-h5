@@ -1,0 +1,2 @@
+@import "./mixin/mobile.duss";
+@import "./mixin/setOnepx.duss";

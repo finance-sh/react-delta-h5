@@ -1,8 +1,6 @@
 /**
- * @file
- * @author
- */
-/*
+ * Created by delta
+ * --------------------------------------------
  * options {object}
  * options.type {string} loading dialog
  * options.cancelFun {function} 取消按钮回调方法
@@ -13,7 +11,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './Layer.less';
+import './Layer.duss';
 
 var OlayComponent = React.createClass({
     componentDidMount: function() {

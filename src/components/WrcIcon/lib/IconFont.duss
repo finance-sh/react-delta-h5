@@ -1,0 +1,83 @@
+@import "./Icon.duss";
+
+:before {
+    .du-icon-success& {
+        font-size: 23px;
+        color: #09BB07;
+    }
+    .du-icon-waiting& {
+        font-size: 23px;
+        color: #10AEFF;
+    }
+    .du-icon-warn& {
+        font-size: 23px;
+        color: #F43530;
+    }
+    .du-icon-info& {
+        font-size: 23px;
+        color: #10AEFF;
+    }
+
+    .du-icon-success-circle& {
+        font-size: 23px;
+        color: #09BB07;
+    }
+    .du-icon-success-no-circle& {
+        font-size: 23px;
+        color: #09BB07;
+    }
+    .du-icon-waiting-circle& {
+        font-size: 23px;
+        color: #10AEFF;
+    }
+    .du-icon-circle& {
+        font-size: 23px;
+        color: #C9C9C9;
+    }
+    .du-icon-download& {
+        font-size: 23px;
+        color: #09BB07;
+    }
+
+    .du-icon-info-circle& {
+        font-size: 23px;
+        color: #09BB07;
+    }
+
+    .du-icon-safe-success& {
+        color: #09BB07;
+    }
+    .du-icon-safe-warn& {
+        color: #FFBE00;
+    }
+
+    .du-icon-cancel& {
+        color: #F43530;
+        font-size: 22px;
+    }
+
+    .du-icon-search& {
+        color: #B2B2B2;
+        font-size: 14px;
+    }
+
+    .du-icon-clear& {
+        color: #B2B2B2;
+        font-size: 14px;
+    }
+}
+
+:before {
+    .du-icon-msg& {
+        font-size: 104px;
+        .du-icon-warn& {
+            color: #F76260;
+        }
+    }
+}
+
+:before {
+    .du-icon-safe& {
+        font-size: 104px;
+    }
+}

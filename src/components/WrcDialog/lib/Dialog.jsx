@@ -1,17 +1,16 @@
 /**
- * @file
- * @author
+ * Created by delta
  */
 
-
 import Layer from '../../WrcLayer';
-import './Dialog.less';
+import './Dialog.duss';
 
-function dialog(tpl) {
+function Dialog(tpl) {
     let options = {
         type: 'dialog',
         html:  tpl    
     };
     new Layer(options);
 }
-export default dialog;
+
+export default Dialog;

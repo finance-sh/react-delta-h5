@@ -1,0 +1,4 @@
+.panel-section .case-1 {
+    padding: .3rem;
+    text-indent: 2em;
+}

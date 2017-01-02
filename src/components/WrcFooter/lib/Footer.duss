@@ -1,0 +1,39 @@
+@import "../../Delta/lib/fn.duss";
+
+.du-footer {
+    color: $globalTextColorGray;
+    font-size: $globalFontSize;
+    text-align: center;
+    a {
+        color: $globalLinkColor;
+    }
+}
+.du-footer-links {
+    font-size: 0;
+}
+.du-footer-link {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    font-size: $globalFontSize;
+    margin: $duFooterLinkMargin;
+    &:before {
+        @mixin setLeftLine;
+        left: $duFooterLinkBeforeLeft;
+        transform: $duFooterLinkBeforeTransform;
+    }
+    &:first-child {
+        &:before {
+            display: none;
+        }
+    }
+}
+.du-footer-text {
+    font-size: $globalFontSize;
+}
+.du-footer-fixed-bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: $duFooterFixedBottom;
+}

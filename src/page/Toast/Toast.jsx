@@ -1,13 +1,12 @@
 /**
- * @file   Toast模块
- * @author zhong
+ * Created by delta
  */
 
 import React from 'react';
 import DuWrap from '../../components/WrcDuWrap';
 import Toast from '../../components/WrcToast';
 // 非UI框架引用
-import style from './Toast.useable.less';
+import style from './Toast.useable.duss';
 import SystemHeader from '../../components/system/SystemHeader/SystemHeader';
 import SystemWrap from '../../components/system/SystemWrap/SystemWrap';
 

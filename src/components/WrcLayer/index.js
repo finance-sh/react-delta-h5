@@ -1,5 +1,5 @@
 /**
- * Created by zhong
+ * Created by delta
  */
 
 import Layer from './lib/Layer';
