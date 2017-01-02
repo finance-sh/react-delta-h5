@@ -1,5 +1,5 @@
 /**
- * Created by zhong
+ * Created by delta
  */
 
 import DuWrap from './lib/DuWrap';

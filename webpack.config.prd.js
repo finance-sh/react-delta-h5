@@ -1,8 +1,7 @@
 /**
- * @file   webpack.config.js
- * @author baidu.inc
+ * Created by delta
  */
-
+ 
 var projectName = 'components-pc';
 var path = require('path');
 var webpack = require('webpack');
@@ -29,11 +28,15 @@ module.exports = {
         ]
     },
     output: {
+        // 文件输出目录
         path: path.resolve(__dirname, 'dist'),
+        // 根据entry的入口名称生成多个js文件
         filename: '/assets/' + projectName + '/js/[name]_[hash:8].js',
         chunkFilename: '/assets/' + projectName + '/js/[name]_[hash:8]_chunk.js',
+        // 用于配置文件发布路径，如CDN或本地服务器
         publicPath: ''
     },
+
     module: {
         // noParse: [REACT],
         loaders: [
@@ -78,6 +81,9 @@ module.exports = {
         }
     },
     plugins: [
+        // 查找相等或近似的模块，避免在最终生成的文件中出现重复的模块
+        new webpack.optimize.DedupePlugin(),
+        
         new webpack.DefinePlugin({
             DEBUG: false
         }),
@@ -90,8 +96,9 @@ module.exports = {
         new webpack.optimize.UglifyJsPlugin({
             minimize: false
         }),
+        // 把入口里面的数组打包成vendors.js
         new HtmlWebpackPlugin({
-            title: '模块管理系统',
+            title: 'Delta UI',
             template: path.join(__dirname, './app/index.tpl.html'),
             filename: './template/' + projectName + '/index.html',
             // chunks这个参数告诉插件要引用entry里面的哪几个入口

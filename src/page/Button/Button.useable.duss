@@ -1,0 +1,29 @@
+.button-section .du-button {
+    margin-bottom: .2rem
+}
+.button-section .case-1,
+.button-section .case-2 {
+    width: 50%;
+    margin: 0 auto;
+}
+.button-section .case-2 {
+    text-align: justify;
+    font-size: 0;
+    text-align: center;
+}
+.button-section .case-2 a {
+    margin: 0 .03rem
+}
+.button-section .case-2::after {
+    display: inline-block;
+    width: 100%;
+    height: 0px;
+    font-size: 0px;
+    content: ".";
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden
+}
+.button-section .case-2 .du-button-mini {
+    width: 1.5rem
+}

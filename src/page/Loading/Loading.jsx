@@ -1,13 +1,12 @@
 /**
- * @file   Loading模块
- * @author zhong
+ * Created by delta
  */
 
 import React from 'react';
 import DuWrap from '../../components/WrcDuWrap';
 import Loading from '../../components/WrcLoading';
 // 非UI框架引用
-import style from './Loading.useable.less';
+import style from './Loading.useable.duss';
 import SystemHeader from '../../components/system/SystemHeader/SystemHeader';
 import SystemWrap from '../../components/system/SystemWrap/SystemWrap';
 

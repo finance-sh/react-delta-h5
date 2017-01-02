@@ -1,0 +1,6 @@
+.dialog-section .delta-bd {
+    padding: 0 1rem
+}
+.dialog-section .case-1 a {
+    margin-bottom: .2rem
+}

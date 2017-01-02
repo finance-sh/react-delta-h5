@@ -1,13 +1,12 @@
 /**
- * @file   Dialog模块
- * @author zhong
+ * Created by delta
  */
 
 import React from 'react';
 import DuWrap from '../../components/WrcDuWrap';
 import Dialog from '../../components/WrcDialog';
 // 非UI框架引用
-import style from './Dialog.useable.less';
+import style from './Dialog.useable.duss';
 import SystemHeader from '../../components/system/SystemHeader/SystemHeader';
 import SystemWrap from '../../components/system/SystemWrap/SystemWrap';
 

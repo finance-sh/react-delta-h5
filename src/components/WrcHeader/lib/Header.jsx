@@ -1,12 +1,10 @@
 /**
- * @file   Header模块
- * @author zhong
+ * Created by delta
  */
-
 
 import React from 'react';
 import withRouter from 'react-router/lib/withRouter';
-import './Header.less';
+import './Header.duss';
 
 var Header = React.createClass({
     propTypes: {

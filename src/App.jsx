@@ -1,11 +1,15 @@
+/**
+ * Created by delta
+ */
+ 
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Router from 'react-router/lib/Router';
 import browserHistory from 'react-router/lib/browserHistory';
-import Routes from './Routes';
+import routers from './Routes';
 
-import'./components/Delta/delta.less';
-import'./components/System/Icon/lib/Icon.less';
+import Delta from './components/Delta';
+import'./components/System/SystemIcon/lib/SystemIcon.duss';
 
 var App = React.createClass({
     render: function() {
@@ -21,7 +25,7 @@ var rootRoute = {
     childRoutes: [{
         component: App,
         indexRoute: {},
-        childRoutes: Routes.routers
+        childRoutes: routers
     }]
 };
 

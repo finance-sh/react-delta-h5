@@ -1,11 +1,9 @@
 /**
- * @file
- * @author liwencheng
- * baidu.inc
+ * Created by delta
  */
 
 import React from 'react';
-import './ActionSheet.less';
+import './ActionSheet.duss';
 
 export default class ActionSheet extends React.Component {
     constructor(props) {

@@ -1,6 +1,5 @@
 /**
- * @file   SystemWrap
- * @author zhong
+ * Created by delta
  */
 
 import React from 'react';
@@ -21,5 +20,3 @@ export default class SystemWrap extends React.Component {
         );
     }
 }
-
-module.exports = SystemWrap;

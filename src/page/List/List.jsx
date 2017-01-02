@@ -1,12 +1,11 @@
 /**
- * @file   List模块
- * @author zhong
+ * Created by delta
  */
 
 import React from 'react';
 import DuWrap from '../../components/WrcDuWrap';
 // 非UI框架引用
-import style from './List.useable.less';
+import style from './List.useable.duss';
 import SystemHeader from '../../components/system/SystemHeader/SystemHeader';
 import SystemWrap from '../../components/system/SystemWrap/SystemWrap';
 

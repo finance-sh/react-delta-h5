@@ -1,0 +1,91 @@
+@import "../../Delta/lib/fn.duss";
+
+.du-button {
+    border: none;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    border-radius: $duButtonRadius;
+    font-size: $duButtonFontSize;
+    color: $duButtonFontColor;
+    background:$duButtonBg;
+    line-height:$duButtonHeight;
+    min-height:$duButtonHeight;
+    /* 取消ios的自带样式 */
+    -webkit-appearance:none;
+    &.du-button-inline {
+        display:inline-block;
+    }
+}
+
+/* gap between btn */
+.du-button + .du-button {
+    margin-top: $duButtonDefaultGap;
+}
+
+.du-button-primary {
+    color: $duButtonFontPrimaryColor;
+    background-color: $duButtonPrimaryBg;
+}
+
+.du-button-danger {
+    background-color: $duButtonDangerBg;
+    color: $duButtonFontDangerColor;
+}
+
+.du-button-default {
+    color: $duButtonFontDefaultColor;
+    background-color: $duButtonDefaultBg;
+    &.du-button-disabled {
+        background-color: $duButtonDefaultDisableBg;
+        color: $duButtonFontDefaultDisableColor;
+        
+    }
+}
+
+/* hollow */
+[class*="du-button-hollow"] {
+    background-color: transparent;
+}
+
+.du-button-hollow-primary {
+    color: $duButtonFontHollowPrimaryColor;
+    background-color: $duButtonHollowPrimaryBg;
+    border: $duButtonHollowPrimaryBorderWidth solid $duButtonHollowPrimaryBorderColor;
+}
+
+.du-button-hollow-danger {
+    color: $duButtonFontHollowDangerColor;
+    background-color: $duButtonHollowDangerBg;
+    border: $duButtonHollowDangerBorderWidth solid $duButtonHollowDangerBorderColor;
+}
+
+.du-button-hollow-default {
+    color: $duButtonFontHollowDefaultColor;
+    background-color: $duButtonHollowDefaultBg;
+    border: $duButtonHollowDefaultBorderWidth solid $duButtonHollowDefaultBorderColor;
+    &.du-button-disabled {
+        color: $duButtonFontHollowDefaultDisableColor;
+        background-color: $duButtonHollowDefaultDisableBg;
+        border: $duButtonHollowDefaultBorderWidth solid $duButtonHollowDefaultDisableBorderColor;
+    }
+}
+
+/* du-button-mini */
+.du-button-mini {
+    font-size: $duButtonMiniFontFontSize;
+    line-height: $duButtonMiniFontHeight;
+    min-height: $duButtonMiniFontHeight;
+}
+/* du-button-large */
+.du-button-large {
+    font-size: $duButtonLargeFontFontSize;
+    line-height: $duButtonLargeFontHeight;
+    min-height: $duButtonLargeFontHeight;
+}
+
+/* disabled end */
+.du-button-disabled {
+    color: $duButtonDisabledFontColor;
+}

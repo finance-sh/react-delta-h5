@@ -1,16 +1,16 @@
 /**
- * @file
- * @author
+ * Created by delta
  */
 
 import Layer from '../../WrcLayer';
-import './Loading.less';
+import './Loading.duss';
 
-function loading() {
+function Loading() {
     let optionsLoading = {
         type: 'loading'
     };
     let loadingLayer = new Layer(optionsLoading);
     return loadingLayer;
 }
-export default loading;
+
+export default Loading;

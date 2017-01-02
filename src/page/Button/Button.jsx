@@ -1,12 +1,11 @@
 /**
- * @file   Button模块
- * @author zhong
+ * Created by delta
  */
 
 import React from 'react';
 import DuWrap from '../../components/WrcDuWrap';
 // 非UI框架引用
-import style from './Button.useable.less';
+import style from './Button.useable.duss';
 import SystemHeader from '../../components/system/SystemHeader/SystemHeader';
 import SystemWrap from '../../components/system/SystemWrap/SystemWrap';
 

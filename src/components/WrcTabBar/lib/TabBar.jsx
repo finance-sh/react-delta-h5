@@ -1,6 +1,10 @@
+/**
+ * Created by delta
+ */
+ 
 import React from 'react';
 import classNames from 'classnames';
-import './TabBar.less';
+import './TabBar.duss';
 
 export default class TabBar extends React.Component {
 

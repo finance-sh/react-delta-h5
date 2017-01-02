@@ -1,6 +1,5 @@
 /**
- * @file   DuWrap
- * @author zhong
+ * Created by delta
  */
 
 import React from 'react';
