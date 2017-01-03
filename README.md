@@ -2,11 +2,12 @@
 
 ####  webpack 配置
 ```javascript
+npm install precss postcss-import autoprefixer --save-dev
 
 // postcss
 var precss = require('precss');
 var autoprefixer = require('autoprefixer');
-var atImport = require("postcss-import");
+var atImport = require('postcss-import');
 
 postcss: function(webpack) {
     var option = {
@@ -28,9 +29,9 @@ loaders: [
         loaders: [
             'style-loader',
             'css-loader',
+            'px-rem',
             'postcss-loader'
-        ],
-        exclude: /node_modules$/
+        ]
     }
 ]
 

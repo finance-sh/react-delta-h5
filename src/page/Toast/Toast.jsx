@@ -3,8 +3,8 @@
  */
 
 import React from 'react';
-import DuWrap from '../../components/WrcDuWrap';
-import Toast from '../../components/WrcToast';
+import DuWrap from '../../components/DuWrap';
+import Toast from '../../components/Toast';
 // 非UI框架引用
 import style from './Toast.useable.duss';
 import SystemHeader from '../../components/system/SystemHeader/SystemHeader';

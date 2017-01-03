@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import DuWrap from '../../components/WrcDuWrap';
+import DuWrap from '../../components/DuWrap';
 // 非UI框架引用
 import style from './Footer.useable.duss';
 import SystemHeader from '../../components/system/SystemHeader/SystemHeader';

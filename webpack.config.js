@@ -21,7 +21,7 @@ var adaptiveText = fs.readFileSync(ADAPTIVE_PATH,'utf8');
 // postcss
 var precss = require('precss');
 var autoprefixer = require('autoprefixer');
-var atImport = require("postcss-import");
+var atImport = require('postcss-import');
 var px2rem = require('postcss-plugin-px2rem');
 
 module.exports = {
@@ -67,7 +67,7 @@ module.exports = {
         ]
     },
 
-    postcss: function(webpack) {
+    postcss: function (webpack) {
         var option = {
             px2rem: {
                 minPixelValue: 2

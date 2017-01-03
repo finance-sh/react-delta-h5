@@ -11,17 +11,17 @@
 /* --------------------------- css-component */
 
 /* iconFont */
-@import "../../WrcIcon/lib/IconFont.duss";
+@import "../../Icon/lib/IconFont.duss";
 /* button */
-@import "../../WrcButton/lib/Button.duss";
+@import "../../Button/lib/Button.duss";
 /* list */
-@import "../../WrcList/lib/List.duss";
+@import "../../List/lib/List.duss";
 /* panel */
-@import "../../WrcPanel/lib/Panel.duss";
+@import "../../Panel/lib/Panel.duss";
 /* flex */
-@import "../../WrcFlex/lib/Flex.duss";
+@import "../../Flex/lib/Flex.duss";
 /* footer */
-@import "../../WrcFooter/lib/Footer.duss";
+@import "../../Footer/lib/Footer.duss";
 
 /* --------------------------- js-component JS组件的CSS文件由组件自身引入
   layer 

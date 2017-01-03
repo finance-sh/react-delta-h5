@@ -3,8 +3,8 @@
  */
 
 import React from 'react';
-import DuWrap from '../../components/WrcDuWrap';
-import Loading from '../../components/WrcLoading';
+import DuWrap from '../../components/DuWrap';
+import Loading from '../../components/Loading';
 // 非UI框架引用
 import style from './Loading.useable.duss';
 import SystemHeader from '../../components/system/SystemHeader/SystemHeader';

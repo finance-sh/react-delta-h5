@@ -1,33 +1,16 @@
-/* 发布模式 =============================================================== */
+/* 开发模式 =============================================================== */
 
 /* css组件-variable */
-@import "../../../../../../app/components/DeltaVariable/du-global.duss";
-@import "../../../../../../app/components/DeltaVariable/du-button.duss";
-@import "../../../../../../app/components/DeltaVariable/du-panel.duss";
-@import "../../../../../../app/components/DeltaVariable/du-list.duss";
-@import "../../../../../../app/components/DeltaVariable/du-flex.duss";
-@import "../../../../../../app/components/DeltaVariable/du-footer.duss";
+@import "../../DeltaVariable/du-global.duss";
+@import "../../DeltaVariable/du-button.duss";
+@import "../../DeltaVariable/du-panel.duss";
+@import "../../DeltaVariable/du-list.duss";
+@import "../../DeltaVariable/du-flex.duss";
+@import "../../DeltaVariable/du-footer.duss";
 
 /* js组件-variable */
-@import "../../../../../../app/components/DeltaVariable/du-header.duss";
-@import "../../../../../../app/components/DeltaVariable/du-dialog.duss";
-@import "../../../../../../app/components/DeltaVariable/du-loading.duss";
-@import "../../../../../../app/components/DeltaVariable/du-toast.duss";
-@import "../../../../../../app/components/DeltaVariable/du-tabbar.duss";
-
-// /* 开发模式 =============================================================== */
-
-// /* css组件-variable */
-// @import "../../DeltaVariable/du-global.duss";
-// @import "../../DeltaVariable/du-button.duss";
-// @import "../../DeltaVariable/du-panel.duss";
-// @import "../../DeltaVariable/du-list.duss";
-// @import "../../DeltaVariable/du-flex.duss";
-// @import "../../DeltaVariable/du-footer.duss";
-
-// /* js组件-variable */
-// @import "../../DeltaVariable/du-header.duss";
-// @import "../../DeltaVariable/du-dialog.duss";
-// @import "../../DeltaVariable/du-loading.duss";
-// @import "../../DeltaVariable/du-toast.duss";
-// @import "../../DeltaVariable/du-tabbar.duss";
+@import "../../DeltaVariable/du-header.duss";
+@import "../../DeltaVariable/du-dialog.duss";
+@import "../../DeltaVariable/du-loading.duss";
+@import "../../DeltaVariable/du-toast.duss";
+@import "../../DeltaVariable/du-tabbar.duss";

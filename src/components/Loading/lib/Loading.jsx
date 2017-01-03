@@ -2,7 +2,7 @@
  * Created by delta
  */
 
-import Layer from '../../WrcLayer';
+import Layer from '../../Layer';
 import './Loading.duss';
 
 function Loading() {

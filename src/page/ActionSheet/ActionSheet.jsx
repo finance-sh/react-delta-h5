@@ -3,8 +3,8 @@
  */
 
 import React from 'react';
-import DuWrap from '../../components/WrcDuWrap';
-import ActionSheet from '../../components/WrcActionSheet';
+import DuWrap from '../../components/DuWrap';
+import ActionSheet from '../../components/ActionSheet';
 // 非UI框架引用
 import style from './ActionSheet.useable.duss';
 import SystemHeader from '../../components/system/SystemHeader/SystemHeader';
