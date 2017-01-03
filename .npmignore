@@ -6,6 +6,5 @@
 /src/*.*
 /src/page
 /src/components/System
-/src/components/DeltaVariable
 /log.txt
 .idea
