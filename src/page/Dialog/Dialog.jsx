@@ -3,8 +3,8 @@
  */
 
 import React from 'react';
-import DuWrap from '../../components/WrcDuWrap';
-import Dialog from '../../components/WrcDialog';
+import DuWrap from '../../components/DuWrap';
+import Dialog from '../../components/Dialog';
 // 非UI框架引用
 import style from './Dialog.useable.duss';
 import SystemHeader from '../../components/system/SystemHeader/SystemHeader';

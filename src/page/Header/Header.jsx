@@ -3,8 +3,8 @@
  */
 
 import React from 'react';
-import Header from '../../components/WrcHeader';
-import DuWrap from '../../components/WrcDuWrap';
+import Header from '../../components/Header';
+import DuWrap from '../../components/DuWrap';
 // 非UI框架引用
 import style from './Header.useable.duss';
 import SystemHeader from '../../components/system/SystemHeader/SystemHeader';

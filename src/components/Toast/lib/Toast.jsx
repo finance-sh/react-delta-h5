@@ -5,7 +5,7 @@
  * outTime {number} display time,in milliseconds
  */
 
-import Layer from '../../WrcLayer';
+import Layer from '../../Layer';
 import './Toast.duss';
 
 function Toast(str, outTime) {

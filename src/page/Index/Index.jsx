@@ -4,7 +4,7 @@
 
 import React from 'react';
 import Link from 'react-router/lib/Link';
-import DuWrap from '../../components/WrcDuWrap';
+import DuWrap from '../../components/DuWrap';
 // 非UI框架引用
 import style from './Index.useable.duss';
 import SystemHeader from '../../components/system/SystemHeader/SystemHeader';
