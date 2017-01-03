@@ -40,7 +40,7 @@ const HeaderPage = React.createClass({
                             <Header title="百度" />
                         </div>
                         <div className="case-3">
-                            <SystemHeader title="钱包" returnBtnDisplay={false} />
+                            <Header title="钱包" returnBtnDisplay={false} />
                         </div>
                     </SystemWrap>
                 </DuWrap>
