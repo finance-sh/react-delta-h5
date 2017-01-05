@@ -1,0 +1,3 @@
+$duActionsheetCancel              : $duItemLineColor;
+$duActionsheetCancelBorderTopWidth: 5px;
+$duActionsheetTransitionDuration  : .3s;

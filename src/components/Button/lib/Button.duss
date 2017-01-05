@@ -25,21 +25,21 @@
 }
 
 .du-button-primary {
-    color: $duButtonFontPrimaryColor;
+    color: $duButtonPrimaryFontColor;
     background-color: $duButtonPrimaryBg;
 }
 
 .du-button-danger {
     background-color: $duButtonDangerBg;
-    color: $duButtonFontDangerColor;
+    color: $duButtonDangerFontColor;
 }
 
 .du-button-default {
-    color: $duButtonFontDefaultColor;
+    color: $duButtonDefaultFontColor;
     background-color: $duButtonDefaultBg;
     &.du-button-disabled {
         background-color: $duButtonDefaultDisableBg;
-        color: $duButtonFontDefaultDisableColor;
+        color: $duButtonDefaultDisableFontColor;
         
     }
 }
@@ -50,23 +50,23 @@
 }
 
 .du-button-hollow-primary {
-    color: $duButtonFontHollowPrimaryColor;
+    color: $duButtonHollowPrimaryFontColor;
     background-color: $duButtonHollowPrimaryBg;
     border: $duButtonHollowPrimaryBorderWidth solid $duButtonHollowPrimaryBorderColor;
 }
 
 .du-button-hollow-danger {
-    color: $duButtonFontHollowDangerColor;
+    color: $duButtonHollowDangerFontColor;
     background-color: $duButtonHollowDangerBg;
     border: $duButtonHollowDangerBorderWidth solid $duButtonHollowDangerBorderColor;
 }
 
 .du-button-hollow-default {
-    color: $duButtonFontHollowDefaultColor;
+    color: $duButtonHollowDefaultFontColor;
     background-color: $duButtonHollowDefaultBg;
     border: $duButtonHollowDefaultBorderWidth solid $duButtonHollowDefaultBorderColor;
     &.du-button-disabled {
-        color: $duButtonFontHollowDefaultDisableColor;
+        color: $duButtonHollowDefaultDisableFontColor;
         background-color: $duButtonHollowDefaultDisableBg;
         border: $duButtonHollowDefaultBorderWidth solid $duButtonHollowDefaultDisableBorderColor;
     }
@@ -74,13 +74,13 @@
 
 /* du-button-mini */
 .du-button-mini {
-    font-size: $duButtonMiniFontFontSize;
+    font-size: $duButtonMiniFontSize;
     line-height: $duButtonMiniFontHeight;
     min-height: $duButtonMiniFontHeight;
 }
 /* du-button-large */
 .du-button-large {
-    font-size: $duButtonLargeFontFontSize;
+    font-size: $duButtonLargeFontSize;
     line-height: $duButtonLargeFontHeight;
     min-height: $duButtonLargeFontHeight;
 }

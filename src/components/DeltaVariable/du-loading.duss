@@ -15,4 +15,4 @@ $duLoadingSnakeSpeed          : 1.2s;
 
 /* text  */
 $duLoadingTextMarginLeft      : 10px;
-$duLoadingFontSize            : 28px;
+$duLoadingTextFontSize        : 28px;

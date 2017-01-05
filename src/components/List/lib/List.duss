@@ -36,12 +36,12 @@
 
 .du-item-before {
     flex: 1 1 0;
-    padding-right: $duItemTitlePaddingRight;
+    padding-right: $duItemBeforePaddingRight;
 }
 
 .du-item-after [class^="du-icon"] {
-    font-size: $duIconFontSize;
-    color: $duIconColor;
+    font-size: $duItemIconFontSize;
+    color: $duItemIconColor;
 }
 
 .du-item,

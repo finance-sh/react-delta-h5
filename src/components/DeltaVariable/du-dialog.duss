@@ -1,27 +1,31 @@
 $duDialogBackgroundColor     : #FFF;
-$duDialogLineColor           : #EEEEEE;
-
-$duDialogLinkColor           : #e94643;
-
-$duDialogWidth               : 70%;
+$duDialogWidth               : 78%;
 $duDialogBorderRadius        : 10px;
 $duDialogFontSize            : 26px;
+$duDialogLineColor           : #EEEEEE;
 $duDialogLineHeight          : inherit;
+
+/* link */
+$duDialogLinkColor           : #e94643;
 
 /* button */
 $duDialogButtonDefaultColor  : #8994a5;
 $duDialogButtonPrimaryColor  : #e94643;
 
 /* dialog-hd */
+$duDialogHdFontSize          : 30px;
 $duDialogHdPaddingTop        : 40px;
 $duDialogHdMarginBottom      : -25px;
+$duDialogHdColor             : #333;
 
 /* dialog-bd */
-$duDialogBdFontSize          : 24px;
-$duDialogBdPadding           : 80px 12%;
+$duDialogBdPadding           : 50px 7%;
 $duDialogBdColor             : #8994a5;
+
 /* dialog-hd + dialog-bd  */
+$duDialogHd2BdPadding        : 50px 7%;
 $duDialogHd2BdColor          : #8994a5;
+$duDialogHd2BdFontSize       : 24px;
 
 /* dialog-ft */
 $duDialogFtLineHeight        : 100px;

@@ -17,6 +17,8 @@
     }
 }
 .du-dialog-hd {
+    font-size: $duDialogHdFontSize;
+    color: $duDialogHdColor;
     padding-top: $duDialogHdPaddingTop;
     margin-bottom: $duDialogHdMarginBottom;
 }
@@ -27,8 +29,9 @@
     padding: $duDialogBdPadding;
 }
 .du-dialog-hd + .du-dialog-bd {
+    padding: $duDialogHd2BdPadding;
     color: $duDialogHd2BdColor;
-    font-size: $duDialogBdFontSize;
+    font-size: $duDialogHd2BdFontSize;
 }
 .du-dialog-ft {
     position: relative;

@@ -31,7 +31,7 @@
     display: inline-block;
     color: #FFF;
     text-align: center;
-    font-size: $duLoadingFontSize;
+    font-size: $duLoadingTextFontSize;
     margin-left: $duLoadingTextMarginLeft;
 }
 
