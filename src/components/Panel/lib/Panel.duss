@@ -1,7 +1,7 @@
 @import "../../Delta/lib/fn.duss";
 
 .du-panel {
-    background-color: $duPanelbackGroundColor;
+    background-color: $duPanelBackGroundColor;
     margin-bottom: $duPanelMarginBottom;
     position: relative;
     overflow: hidden;
@@ -17,7 +17,7 @@
 }
 
 .du-panel-hd {
-    background-color: $duPanelHdbackGroundColor;
+    background-color: $duPanelHdBackGroundColor;
     min-height: $duPanelHdHeight;
     padding: $duPanelHdPadding;
     position: relative;

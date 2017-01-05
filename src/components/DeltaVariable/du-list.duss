@@ -1,12 +1,11 @@
-$duItemHeight           : 100px;
-$duItemPadding          : 20px 20px;
+$duItemHeight            : 100px;
+$duItemPadding           : 20px 20px;
 
-$duItemLineColor        : #EEE;
-$duItemLineLeft         : 20px;
+$duItemLineColor         : #EEE;
+$duItemLineLeft          : 20px;
 
-$duItemTitlePaddingRight: 10px;
+$duItemIconFontSize      : 33px;
+$duItemIconColor         : #bdbdbd;
 
-$duIconFontSize         : 33px;
-$duIconColor            : #bdbdbd;
-
-$duItemSidePaddingRight : 40px;
+$duItemBeforePaddingRight: 10px;
+$duItemSidePaddingRight  : 40px;

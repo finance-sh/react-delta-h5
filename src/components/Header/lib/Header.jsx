@@ -45,7 +45,7 @@ var Header = React.createClass({
             <header className="du-page-hd">
                 <h1 className="du-header-title">{this.props.title}</h1>
                 {returnNode}
-                <a className="du-header-act" href="javascript:void(0)" onClick={this.suppleEvent}>{this.props.suppleTitle}</a>
+                <a className="du-header-act" href="javascript:void(0)" onClick={this.suppleEvent} dangerouslySetInnerHTML={{__html: this.props.suppleTitle }} />
             </header>
         );
         return headerTPL;

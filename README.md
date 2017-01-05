@@ -36,3 +36,9 @@ loaders: [
 ]
 
 ```
+
+####  使用说明
+###### JS组件调用
+import DuWrap from 'react-deltaui/src/components/DuWrap';
+
+###### CSS组件无需手动调用

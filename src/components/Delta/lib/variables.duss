@@ -1,4 +1,3 @@
-/* 开发模式 =============================================================== */
 
 /* css组件-variable */
 @import "../../DeltaVariable/du-global.duss";
@@ -14,3 +13,4 @@
 @import "../../DeltaVariable/du-loading.duss";
 @import "../../DeltaVariable/du-toast.duss";
 @import "../../DeltaVariable/du-tabbar.duss";
+@import "../../DeltaVariable/du-actionsheet.duss";

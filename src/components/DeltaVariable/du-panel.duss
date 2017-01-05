@@ -1,11 +1,13 @@
+$duPanelBackGroundColor  : #FFF;
 $duPanelMarginBottom     : 30px;
+
+$duPanelHdBackGroundColor: rgba(0,0,0,.03);
 $duPanelHdPadding        : 20px 20px;
 $duPanelHdHeight         : 100px;
+$duPanelHdLineLeft       : 0;
+
 $duPanelFtHeight         : 100px;
 $duPanelFtPadding        : 20px 20px;
-$duPanelHdLineLeft       : 0;
 $duPanelFtLineLeft       : 0;
 
 $duPanelLineColor        : #EEE;
-$duPanelbackGroundColor  : #FFF;
-$duPanelHdbackGroundColor: rgba(0,0,0,.03);

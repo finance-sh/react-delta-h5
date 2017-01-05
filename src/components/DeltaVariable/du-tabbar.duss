@@ -1,18 +1,17 @@
-$duTabBarbackGroundColor : #F9F9F9;
-$duTabBarBdTopLineColor  : #DDD;
-$duTabBarHeight          : $globalTabBarHeight;
+$duTabBarBackGroundColor     : #F9F9F9;
+$duTabBarBdTopLineColor      : #DDD;
+$duTabBarHeight              : $globalTabBarHeight;
 
 /* item */
-$duTabbarItemFontSize    : 24px;
-$duTabbarItemPaddingTop  : 20px;
+$duTabbarItemFontSize        : 24px;
+$duTabbarItemPaddingTop      : 20px;
+/* select  */
+$duTabbarItemSelectLabelColor: #6492E3;
 
 /* label */
-$duTabbarLabelHeight     : 40px;
-$duTabbarLabelColor      : $globalTextColorGray;
-
-/* select  */
-$duTabbarSelectLabelColor: #6492E3;
+$duTabbarLabelHeight         : 40px;
+$duTabbarLabelColor          : $globalTextColorGray;
 
 /* icon */
-$duTabBarIconWidth       : 24px; 
-$duTabBarIconHeight      : 24px; 
+$duTabBarIconWidth           : 24px; 
+$duTabBarIconHeight          : 24px; 

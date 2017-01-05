@@ -10,7 +10,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: $duTabBarbackGroundColor;
+    background-color: $duTabBarBackGroundColor;
 }
 
 .du-tabbar-hd {
@@ -50,6 +50,6 @@
 
 .du-tabbar-item-select {
     .du-tabbar-label {
-        color: $duTabbarSelectLabelColor;
+        color: $duTabbarItemSelectLabelColor;
     }
 }
