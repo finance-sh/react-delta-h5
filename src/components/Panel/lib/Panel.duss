@@ -24,7 +24,7 @@
     align-items: center;
     display: flex;
     .du-item,
-    .du-item-link > a {
+    .du-item-link > a:first-child {
         width: 100%;
         padding: 0;
         min-height: auto;
@@ -46,13 +46,13 @@
         left: $duPanelFtLineLeft;
     }
     &.du-panel-ft-left {
-        justify-content:flex-start;
+        justify-content: flex-start;
     }
     &.du-panel-ft-center {
-        justify-content:center;
+        justify-content: center;
     }
 
     &.du-panel-ft-right {
-        justify-content:flex-end;
+        justify-content: flex-end;
     }
 }

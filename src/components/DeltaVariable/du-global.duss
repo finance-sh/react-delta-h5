@@ -19,7 +19,7 @@ $globalTextColorWarn             : $globalWarnColor;
 $globalTextColorGray             : #999999;
 
 /* page */
-$globalPageDefaultBackgroundColor:#f8f8f8;
+$globalPageDefaultBackgroundColor:#f3f3f3;
 
 /* HeaderHeight */
 $globalHeaderHeight              : 88px;

@@ -47,6 +47,7 @@ const IndexPage = React.createClass({
 
                             <div className="col"><Link to="/actionsheet"><i className="du-system-iconfont du-system-icon-sheet"></i>sheet</Link></div>
                             <div className="col"><Link to="/infinite"><i className="du-system-iconfont du-system-icon-infinite"></i>infinite</Link></div>
+                            <div className="col"><Link to="/form"><i className="du-system-iconfont du-system-icon-form"></i>form</Link></div>
                         </div>
                     </SystemWrap>
                 </DuWrap>

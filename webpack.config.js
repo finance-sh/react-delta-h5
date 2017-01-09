@@ -7,6 +7,7 @@ var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // path
 var ROOT_PATH = path.resolve(__dirname);
@@ -23,6 +24,7 @@ var precss = require('precss');
 var autoprefixer = require('autoprefixer');
 var atImport = require('postcss-import');
 var px2rem = require('postcss-plugin-px2rem');
+var stylelint = require("stylelint");
 
 module.exports = {
 
@@ -38,6 +40,7 @@ module.exports = {
         loaders: [
             {
                 test: /\.duss$/,
+                // loader: ExtractTextPlugin.extract(['style'], 'css!postcss'),
                 loaders: [
                     'style-loader',
                     'css-loader',
@@ -80,7 +83,14 @@ module.exports = {
             atImport(option.atImport),
             precss,
             autoprefixer,
-            px2rem(option.px2rem)
+            px2rem(option.px2rem),
+            stylelint({
+                rules: {
+                    'max-empty-lines': 2,
+                    'property-no-unknown': [ true ],
+                    'unit-no-unknown': [ true ]
+                } 
+            })
         ];
     },
 
@@ -108,6 +118,7 @@ module.exports = {
     devtool: 'cheap-source-map',
 
     plugins: [
+        // new ExtractTextPlugin('delta.css'),
         new HtmlWebpackPlugin({
             title: 'Delta UI',
             template: TEMPLATE_PATH,
@@ -119,6 +130,6 @@ module.exports = {
             inject: 'body',
             chunksSortMode: 'dependency',
             adaptive: adaptiveText
-        }),
+        })
     ]
 };

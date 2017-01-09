@@ -1,0 +1,26 @@
+
+$duFormLineColor        : $duItemLineColor;
+$duFormLineLeft         : 30px;
+
+$duFormItemColor        : inherit;
+$duFormItemFontSize     : 32px;
+$duFormItemHeight       : 110px;
+$duFormItemPadding      : 20px 30px;
+
+$duFormHdWidth          : 6em;
+$duFormFtPaddingLeft    : $duItemFtPaddingLeft;
+
+$duFormIconFontSize     : $duItemIconFontSize;
+$duFormIconColor        : $duItemIconColor;
+
+/* duFormHeight - duFormPadding*2 */
+$duFormInputHeight      : 60px;
+$duFormInputFontSize    : $globalFontSize;
+
+/* tip */
+$duFormTipFontSize      : 24px;
+$duFormTipPaddingLeft   : 30px;
+$duFormTipHeight        : 80px;
+
+$duFormTipErrorColor    : #E85352;
+$duFormTipErrorLineColor: #E85352;
