@@ -8,7 +8,7 @@
     text-align: center;
     border-radius: $duButtonRadius;
     font-size: $duButtonFontSize;
-    color: $duButtonFontColor;
+    color: $duButtonColor;
     background:$duButtonBg;
     line-height:$duButtonHeight;
     min-height:$duButtonHeight;
@@ -25,21 +25,21 @@
 }
 
 .du-button-primary {
-    color: $duButtonPrimaryFontColor;
+    color: $duButtonPrimaryColor;
     background-color: $duButtonPrimaryBg;
 }
 
 .du-button-danger {
     background-color: $duButtonDangerBg;
-    color: $duButtonDangerFontColor;
+    color: $duButtonDangerColor;
 }
 
 .du-button-default {
-    color: $duButtonDefaultFontColor;
+    color: $duButtonDefaultColor;
     background-color: $duButtonDefaultBg;
     &.du-button-disabled {
         background-color: $duButtonDefaultDisableBg;
-        color: $duButtonDefaultDisableFontColor;
+        color: $duButtonDefaultDisableColor;
         
     }
 }
@@ -50,23 +50,23 @@
 }
 
 .du-button-hollow-primary {
-    color: $duButtonHollowPrimaryFontColor;
+    color: $duButtonHollowPrimaryColor;
     background-color: $duButtonHollowPrimaryBg;
     border: $duButtonHollowPrimaryBorderWidth solid $duButtonHollowPrimaryBorderColor;
 }
 
 .du-button-hollow-danger {
-    color: $duButtonHollowDangerFontColor;
+    color: $duButtonHollowDangerColor;
     background-color: $duButtonHollowDangerBg;
     border: $duButtonHollowDangerBorderWidth solid $duButtonHollowDangerBorderColor;
 }
 
 .du-button-hollow-default {
-    color: $duButtonHollowDefaultFontColor;
+    color: $duButtonHollowDefaultColor;
     background-color: $duButtonHollowDefaultBg;
     border: $duButtonHollowDefaultBorderWidth solid $duButtonHollowDefaultBorderColor;
     &.du-button-disabled {
-        color: $duButtonHollowDefaultDisableFontColor;
+        color: $duButtonHollowDefaultDisableColor;
         background-color: $duButtonHollowDefaultDisableBg;
         border: $duButtonHollowDefaultBorderWidth solid $duButtonHollowDefaultDisableBorderColor;
     }
@@ -87,5 +87,5 @@
 
 /* disabled end */
 .du-button-disabled {
-    color: $duButtonDisabledFontColor;
+    color: $duButtonDisabledColor;
 }

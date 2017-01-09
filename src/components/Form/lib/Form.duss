@@ -18,20 +18,26 @@
     font-size: $duFormItemFontSize;
     padding: $duFormItemPadding;
     min-height: $duFormItemHeight;
+    a {
+        flex: 1;
+    }
 }
 
 .du-form-item,
+.du-form-item a,
 .du-form-tip {
     align-items: center;
     display: flex;
 }
 
-.du-form-hd {
+.du-form-hd,
+.du-item-hd {
     width: $duFormHdWidth;
 }
 
 .du-form-bd {
     flex: 1 1 0;
+    font-size: $duFormInputFontSize;
 }
 
 .du-form-ft {
@@ -67,4 +73,8 @@
         @mixin setTopLine $duFormTipErrorLineColor;
         left: $duFormLineLeft;
     }
+}
+
+.du-form-placeholder {
+    color: $duFormPlaceHolderColor;
 }

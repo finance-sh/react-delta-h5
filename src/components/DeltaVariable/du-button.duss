@@ -1,46 +1,46 @@
 $duButtonDefaultGap                     : 0;
 $duButtonFontSize                       : 32px;
-$duButtonFontColor                      : #666;
+$duButtonColor                          : #666;
 $duButtonBg                             : #f7f7f7;
 $duButtonHeight                         : 70px;
 $duButtonRadius                         : 4px;
 
-$duButtonDisabledFontColor              : rgba(255,255,255,.6);
+$duButtonDisabledColor                  : rgba(255,255,255,.6);
 
 /* Default */
-$duButtonDefaultFontColor               : #FFF;
+$duButtonDefaultColor                   : #FFF;
 $duButtonDefaultBg                      : #6492E3;
 /* Default disable */
-$duButtonDefaultDisableFontColor        : #FFF;
+$duButtonDefaultDisableColor            : #FFF;
 $duButtonDefaultDisableBg               : #99B9F1;
 
 /* Primary */
-$duButtonPrimaryFontColor               : #FFF;
+$duButtonPrimaryColor                   : #FFF;
 $duButtonPrimaryBg                      : #b9c2d0;
 
 /* Danger */
-$duButtonDangerFontColor                : #FFF;
+$duButtonDangerColor                    : #FFF;
 $duButtonDangerBg                       : #82bb42;
 
 /* hollowDefault */
-$duButtonHollowDefaultFontColor         : #678CED;
+$duButtonHollowDefaultColor             : #678CED;
 $duButtonHollowDefaultBg                : #FFF;
 $duButtonHollowDefaultBorderColor       : #678CED;
 $duButtonHollowDefaultBorderWidth       : 1px;
 
 /* hollowDefault disable */
-$duButtonHollowDefaultDisableFontColor  : rgba(0, 0, 0, 0.2);
+$duButtonHollowDefaultDisableColor      : rgba(0, 0, 0, 0.2);
 $duButtonHollowDefaultDisableBg         : #FFF;
 $duButtonHollowDefaultDisableBorderColor: rgba(0, 0, 0, 0.2);
 
 /* hollowPrimary */
-$duButtonHollowPrimaryFontColor         : #82bb42;
+$duButtonHollowPrimaryColor             : #82bb42;
 $duButtonHollowPrimaryBg                : #FFF;
 $duButtonHollowPrimaryBorderColor       : #82bb42;
 $duButtonHollowPrimaryBorderWidth       : 1px;
 
 /* hollowDanger */
-$duButtonHollowDangerFontColor          : #666;
+$duButtonHollowDangerColor              : #666;
 $duButtonHollowDangerBg                 : #FFF;
 $duButtonHollowDangerBorderColor        : #666;
 $duButtonHollowDangerBorderWidth        : 1px;

@@ -56,13 +56,13 @@ buttonFont -> Font
 5. duitem 增加 $duItemFontSize duItemColor
 6. 增加form 配置文件
 7. 表单input select textarea 字体 颜色 字号继承body样式
+8. precss - 调用未声明变量没有提示报错  增加csslint
 
+9. 开发检查工具 查找delta编译后带'$'value值报错提示
+10. precss 没有css运算处理
 
-7. precss - 调用未声明变量没有提示报错  增加csslint
-开发检查工具 查找delta编译后带'$'value值报错提示
-8. precss 没有css运算处理
-
-
+2017/1/9
+1. side-list添加多行显示样式
 
 
 
