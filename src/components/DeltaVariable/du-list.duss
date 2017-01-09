@@ -1,3 +1,5 @@
+$duItemFontSize          : $globalFontSize;
+$duItemColor             : inherit;
 $duItemHeight            : 100px;
 $duItemPadding           : 20px 20px;
 
@@ -7,5 +9,7 @@ $duItemLineLeft          : 20px;
 $duItemIconFontSize      : 33px;
 $duItemIconColor         : #bdbdbd;
 
-$duItemBeforePaddingRight: 10px;
+$duItemFtPaddingLeft     : 20px;
 $duItemSidePaddingRight  : 40px;
+
+$duItemSideHdWidth       : 6em;

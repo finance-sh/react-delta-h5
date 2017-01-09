@@ -1,6 +1,8 @@
 @import "../../Delta/lib/fn.duss";
 
 .du-item {
+    color: $duItemColor;
+    font-size: $duItemFontSize;
     padding: $duItemPadding;
     position: relative;
     min-height: $duItemHeight;
@@ -13,46 +15,45 @@
             display: none;
         }
     }
+    &.du-item-side {
+        & > a {
+            flex: 1;
+        }
+        .du-item-hd {
+            width: $duItemSideHdWidth;
+        }
+    }
     &.du-item-link {
         padding: 0;
     }
     &.du-item-column {
-        align-items: inherit;
-        flex-direction: column;
+        display: block;
     }
-    &.du-item-start {
-        align-items: flex-start;
-    }
-    &.du-item-side {
-        .du-item-before {
-            flex: none;
-            padding-right: $duItemSidePaddingRight;
-        }
-        .du-item-after {
-            flex: 1;
-        }
-    }
-}
-
-.du-item-before {
-    flex: 1 1 0;
-    padding-right: $duItemBeforePaddingRight;
-}
-
-.du-item-after [class^="du-icon"] {
-    font-size: $duItemIconFontSize;
-    color: $duItemIconColor;
 }
 
 .du-item,
-.du-item-after,
-.du-item-link > a {
+.du-item-side > a,
+.du-item-link > a,
+.du-item-ft {
     align-items: center;
     display: flex;
 }
 
-.du-item-link > a {
+.du-item-link > a:first-child {
     padding: $duItemPadding;
     min-height: $duItemHeight;
     width: 100%
+}
+
+.du-item-bd {
+    flex: 1 1 0;
+}
+
+.du-item-ft {
+    padding-left: $duItemFtPaddingLeft;
+}
+
+.du-item-ft [class^="du-icon"] {
+    font-size: $duItemIconFontSize;
+    color: $duItemIconColor;
 }

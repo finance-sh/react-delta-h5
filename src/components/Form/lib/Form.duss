@@ -1,0 +1,70 @@
+@import "../../Delta/lib/fn.duss";
+
+.du-form {
+    position: relative;   
+    &:after {
+        @mixin setBottomLine $duFormLineColor;
+        left: $duFormLineLeft;
+    }
+    &:last-child {
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.du-form-item {
+    color: $duFormItemColor;
+    font-size: $duFormItemFontSize;
+    padding: $duFormItemPadding;
+    min-height: $duFormItemHeight;
+}
+
+.du-form-item,
+.du-form-tip {
+    align-items: center;
+    display: flex;
+}
+
+.du-form-hd {
+    width: $duFormHdWidth;
+}
+
+.du-form-bd {
+    flex: 1 1 0;
+}
+
+.du-form-ft {
+    padding-left: $duFormFtPaddingLeft;
+}
+
+.du-form-ft [class^="du-icon"] {
+    font-size: $duFormIconFontSize;
+    color: $duFormIconColor;
+}
+
+.du-form-input {
+    width: 100%;
+    border: 0; 
+    outline: 0;
+    background-color: transparent;
+    font-size: $duFormInputFontSize;
+    height: $duFormInputHeight;
+    line-height: $duFormInputHeight;
+}
+
+.du-form-tip {
+    font-size: $duFormTipFontSize;
+    padding-left: $duFormTipPaddingLeft;
+    width: 100%;
+    position: relative;
+}
+
+.du-form-tip-error {
+    height: $duFormTipHeight;
+    color: $duFormTipErrorColor;
+    &:before {
+        @mixin setTopLine $duFormTipErrorLineColor;
+        left: $duFormLineLeft;
+    }
+}

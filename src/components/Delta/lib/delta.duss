@@ -14,14 +14,16 @@
 @import "../../Icon/lib/IconFont.duss";
 /* button */
 @import "../../Button/lib/Button.duss";
-/* list */
-@import "../../List/lib/List.duss";
 /* panel */
 @import "../../Panel/lib/Panel.duss";
 /* flex */
 @import "../../Flex/lib/Flex.duss";
 /* footer */
 @import "../../Footer/lib/Footer.duss";
+/* list */
+@import "../../List/lib/List.duss";
+/* form */
+@import "../../Form/lib/Form.duss";
 
 /* --------------------------- js-component JS组件的CSS文件由组件自身引入
   layer 

@@ -124,6 +124,16 @@ export default [
         }
     },
     {
+        path: 'form',
+        getComponent: function (nextState, cb) {
+            require.ensure([], function (require) {
+                cb(null, require('./page/Form/Form.jsx'));
+            }, 'form');
+        },
+        onEnter: function () {
+        }
+    },
+    {
         path: '*', // 添加其他路由在此路由设置上方，保证这个设置在最下方
         onEnter: function (nextState, replace) {
             // 如果是其他路由则跳转到首页

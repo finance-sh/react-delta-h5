@@ -3,9 +3,10 @@
 @import "../../DeltaVariable/du-global.duss";
 @import "../../DeltaVariable/du-button.duss";
 @import "../../DeltaVariable/du-panel.duss";
-@import "../../DeltaVariable/du-list.duss";
 @import "../../DeltaVariable/du-flex.duss";
 @import "../../DeltaVariable/du-footer.duss";
+@import "../../DeltaVariable/du-list.duss";
+@import "../../DeltaVariable/du-form.duss";
 
 /* js组件-variable */
 @import "../../DeltaVariable/du-header.duss";

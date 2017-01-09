@@ -30,8 +30,8 @@ const PanelPage = React.createClass({
                             <div className="du-panel-hd">
                                 <div className="du-item du-item-link">
                                     <a href="#" className="">
-                                        <div className="du-item-before">A</div>
-                                        <div className="du-item-after"><span className="du-iconfont du-icon-arrow-right-thick"></span></div>
+                                        <div className="du-item-bd">A</div>
+                                        <div className="du-item-ft"><span className="du-iconfont du-icon-arrow-right-thick"></span></div>
                                     </a>
                                 </div>
                             </div>
@@ -39,26 +39,26 @@ const PanelPage = React.createClass({
                                 <ul className="du-list">
                                     <li className="du-item du-item-link">
                                         <a href="#">
-                                            <div className="du-item-before">标题-带链接</div>
-                                            <div className="du-item-after"><span className="du-item-txt">说明文字</span></div>
+                                            <div className="du-item-bd">标题-带链接</div>
+                                            <div className="du-item-ft"><span className="du-item-txt">说明文字</span></div>
                                         </a>
                                     </li>
                                     <li className="du-item du-item-link">
                                         <a href="#">
-                                            <div className="du-item-before">标题-带链接</div>
-                                            <div className="du-item-after"><span className="du-item-txt">说明文字</span></div>
+                                            <div className="du-item-bd">标题-带链接</div>
+                                            <div className="du-item-ft"><span className="du-item-txt">说明文字</span></div>
                                         </a>
                                     </li>
                                     <li className="du-item du-item-link">
                                         <a href="#">
-                                            <div className="du-item-before">标题-带链接</div>
-                                            <div className="du-item-after"><span className="du-item-txt">说明文字</span></div>
+                                            <div className="du-item-bd">标题-带链接</div>
+                                            <div className="du-item-ft"><span className="du-item-txt">说明文字</span></div>
                                         </a>
                                     </li>
                                     <li className="du-item du-item-link">
                                         <a href="#">
-                                            <div className="du-item-before">标题-带链接</div>
-                                            <div className="du-item-after"><span className="du-item-txt">说明文字</span></div>
+                                            <div className="du-item-bd">标题-带链接</div>
+                                            <div className="du-item-ft"><span className="du-item-txt">说明文字</span></div>
                                         </a>
                                     </li>
                                 </ul>
@@ -73,23 +73,23 @@ const PanelPage = React.createClass({
 
                                 <ul className="du-list">
                                     <li className="du-item du-item-side">
-                                        <div className="du-item-before">标题</div>
-                                        <div className="du-item-after"><span className="du-item-txt">说明文字</span></div>
+                                        <div className="du-item-hd">标题</div>
+                                        <div className="du-item-bd"><span className="du-item-txt">说明文字</span></div>
                                     </li>
 
                                     <li className="du-item du-item-side">
-                                        <div className="du-item-before">标题</div>
-                                        <div className="du-item-after"><span className="du-item-txt">说明文字</span></div>
+                                        <div className="du-item-hd">标题</div>
+                                        <div className="du-item-bd"><span className="du-item-txt">说明文字</span></div>
                                     </li>
 
                                     <li className="du-item du-item-side">
-                                        <div className="du-item-before">标题</div>
-                                        <div className="du-item-after"><span className="du-item-txt">说明文字</span></div>
+                                        <div className="du-item-hd">标题</div>
+                                        <div className="du-item-bd"><span className="du-item-txt">说明文字</span></div>
                                     </li>
 
                                     <li className="du-item du-item-side">
-                                        <div className="du-item-before">标题</div>
-                                        <div className="du-item-after"><span className="du-item-txt">说明文字</span></div>
+                                        <div className="du-item-hd">标题</div>
+                                        <div className="du-item-bd"><span className="du-item-txt">说明文字</span></div>
                                     </li>
 
                                 </ul>
@@ -102,8 +102,8 @@ const PanelPage = React.createClass({
                         <div className="du-panel">
                             <div className="du-item du-item-link">
                                 <a href="#" className="">
-                                    <div className="du-item-before">标题-带链接</div>
-                                    <div className="du-item-after"><span className="du-iconfont du-icon-arrow-right-thick"></span></div>
+                                    <div className="du-item-bd">标题-带链接</div>
+                                    <div className="du-item-ft"><span className="du-iconfont du-icon-arrow-right-thick"></span></div>
                                 </a>
                             </div>
                         </div>
