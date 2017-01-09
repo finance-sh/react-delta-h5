@@ -47,3 +47,9 @@ loaders: [
 v1.3 list组件样式升级，列表项由分为(hd/bd/ft)3部分组成 before改成bd after改为ft
 - list组件 去除duitembdpaddingright,增加duitemftpaddingleft、duItemSideHdWidth、duItemFontSize、duItemColor属性
 - input,select,textarea的字体,颜色,字号继承body样式
+
+v1.3.1 
+增加duItemSideFtAlignItems属性,去除duItemSidePaddingRight属性
+FontSize修改为Size
+
+

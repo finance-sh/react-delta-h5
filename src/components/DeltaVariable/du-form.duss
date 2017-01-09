@@ -13,6 +13,8 @@ $duFormFtPaddingLeft    : $duItemFtPaddingLeft;
 $duFormIconFontSize     : $duItemIconFontSize;
 $duFormIconColor        : $duItemIconColor;
 
+$duFormPlaceHolderColor : #A9A9A9;
+
 /* duFormHeight - duFormPadding*2 */
 $duFormInputHeight      : 60px;
 $duFormInputFontSize    : $globalFontSize;

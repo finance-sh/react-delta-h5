@@ -26,6 +26,7 @@ const ListPage = React.createClass({
                 <SystemHeader />
                 <DuWrap>
                     <SystemWrap pageName="List">
+                    
                         <div className="du-panel">
                             <div className="du-panel-hd">
                                 A
@@ -115,6 +116,51 @@ const ListPage = React.createClass({
                                 D
                             </div>
                             <div className="du-panel-bd">
+
+                                <div className="du-item du-item-side">
+                                    <div className="du-item-hd">标题</div>
+                                    <div className="du-item-bd">
+                                        <div className="case1">文字主题,文字主题</div>
+                                        <div className="case1">文字主题</div>
+                                    </div>
+                                    <div className="du-item-ft">
+                                        <div className="case1">水平方向</div>
+                                        <div className="case1">说明</div>
+                                    </div>
+                                </div>
+
+                                <div className="du-item du-item-side">
+                                    <div className="du-item-hd">标题</div>
+                                    <div className="du-item-bd">
+                                        <div className="case1">文字主题,文字主题</div>
+                                        <div className="case1">文字主题</div>
+                                    </div>
+                                    <div className="du-item-ft">
+                                        <div className="case1">水平方向</div>
+                                        <div className="case1">说明</div>
+                                    </div>
+                                </div>
+
+                                <div className="du-item du-item-side">
+                                    <div className="du-item-hd">标题</div>
+                                    <div className="du-item-bd">
+                                        <div className="case1">文字主题,文字主题</div>
+                                        <div className="case1">文字主题</div>
+                                    </div>
+                                    <div className="du-item-ft">
+                                        <div className="case1">水平方向</div>
+                                        <div className="case1">说明</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div className="du-panel">
+                            <div className="du-panel-hd">
+                                E
+                            </div>
+                            <div className="du-panel-bd">
                                 <div className="du-item">
                                     <div className="du-item-bd">
                                         <div>标题</div>
@@ -130,7 +176,7 @@ const ListPage = React.createClass({
 
                         <div className="du-panel">
                             <div className="du-panel-hd">
-                                E
+                                F
                             </div>
                             <div className="du-panel-bd">
 
@@ -152,6 +198,7 @@ const ListPage = React.createClass({
                                 </div>
                             </div>
                         </div>
+
                     </SystemWrap>
                 </DuWrap>
             </div>

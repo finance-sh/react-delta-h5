@@ -10,6 +10,6 @@ $duItemIconFontSize      : 33px;
 $duItemIconColor         : #bdbdbd;
 
 $duItemFtPaddingLeft     : 20px;
-$duItemSidePaddingRight  : 40px;
 
 $duItemSideHdWidth       : 6em;
+$duItemSideFtAlignItems  : flex-end;
