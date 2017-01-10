@@ -51,5 +51,5 @@
     "react-dom": "~15.3.1",
     "react-router": "^2.6.1"
   },
-  "ownModuleDownLoadPath": {}
+  "ownModuleDownLoadPath": ""
 }
