@@ -53,7 +53,7 @@
 }
 
 .du-item-bd {
-    flex: 1 1 0;
+    flex: 1;
 }
 
 .du-item-ft {
@@ -61,6 +61,6 @@
 }
 
 .du-item-ft [class^="du-icon"] {
-    font-size: $duItemIconFontSize;
-    color: $duItemIconColor;
+    font-size: $duItemFtIconFontSize;
+    color: $duItemFtIconColor;
 }

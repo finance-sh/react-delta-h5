@@ -1,0 +1,26 @@
+.du-iconimg {
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.du-iconimg-close {
+    background-image: url(../../Icon/lib/img/icon-close.png);
+    width: 32px;
+    height: 32px;
+}
+
+.du-iconimg-warn {
+    background-image: url(../../Icon/lib/img/icon-warn.png);
+    width: 32px;
+    height: 32px;
+}
+
+.du-iconimg-rmb {
+    background-image: url(../../Icon/lib/img/icon-rmb.png);
+    width: 25px;
+    height: 30px;
+}

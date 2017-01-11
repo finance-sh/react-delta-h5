@@ -10,8 +10,8 @@
 
 /* --------------------------- css-component */
 
-/* iconFont */
-@import "../../Icon/lib/IconFont.duss";
+/* icon */
+@import "../../Icon/lib/Icon.duss";
 /* button */
 @import "../../Button/lib/Button.duss";
 /* panel */
