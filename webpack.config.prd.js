@@ -2,7 +2,7 @@
  * Created by delta
  */
  
-var projectName = 'components-pc';
+var projectName = 'react-delta-ui';
 var path = require('path');
 var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');

@@ -61,3 +61,6 @@ v1.3.1
 v1.3.2 
 > 修改duItemIconFontSize变量
 > 表单组件增加单个panel样式及模拟placeholder相关交互、并转成ES6
+
+v1.3.3
+> 表单增加错误图标  

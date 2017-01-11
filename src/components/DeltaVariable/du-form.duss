@@ -23,6 +23,7 @@ $duFormInputFontSize             : 28px;
 $duFormTipFontSize               : 24px;
 $duFormTipPaddingLeft            : 30px;
 $duFormTipHeight                 : 80px;
+$duFormTipIconMarginRight        : 10px;
 
 $duFormTipErrorColor             : #E85352;
 $duFormTipErrorLineColor         : #E85352;

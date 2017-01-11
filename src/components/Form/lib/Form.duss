@@ -72,6 +72,10 @@
     padding-left: $duFormTipPaddingLeft;
     width: 100%;
     position: relative;
+    .du-iconimg,
+    .du-iconfont {
+        margin-right: $duFormTipIconMarginRight;
+    }
 }
 
 .du-form-sub,
