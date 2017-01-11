@@ -25,6 +25,7 @@
 
 .du-form-item,
 .du-form-item a,
+.du-form-sub,
 .du-form-tip {
     align-items: center;
     display: flex;
@@ -36,8 +37,8 @@
 }
 
 .du-form-bd {
-    flex: 1 1 0;
-    font-size: $duFormInputFontSize;
+    display: flex;
+    flex: 1;
 }
 
 .du-form-ft {
@@ -45,25 +46,42 @@
 }
 
 .du-form-ft [class^="du-icon"] {
-    font-size: $duFormIconFontSize;
-    color: $duFormIconColor;
+    font-size: $duFormFtIconFontSize;
+    color: $duFormFtIconColor;
+}
+
+.du-form-placeholder {
+    color: $duFormPlaceHolderColor;
 }
 
 .du-form-input {
+    flex: 1;
     width: 100%;
     border: 0; 
     outline: 0;
+    padding: 0;
     background-color: transparent;
     font-size: $duFormInputFontSize;
     height: $duFormInputHeight;
     line-height: $duFormInputHeight;
 }
 
+.du-form-sub,
 .du-form-tip {
     font-size: $duFormTipFontSize;
     padding-left: $duFormTipPaddingLeft;
     width: 100%;
     position: relative;
+}
+
+.du-form-sub,
+.du-form-tip-default {
+    height: $duFormTipHeight;
+    color: $duFormTipDefaultColor;
+    &:before {
+        @mixin setTopLine $duFormTipDefaultLineColor;
+        left: $duFormLineLeft;
+    }
 }
 
 .du-form-tip-error {
@@ -75,6 +93,61 @@
     }
 }
 
-.du-form-placeholder {
-    color: $duFormPlaceHolderColor;
+/* own */
+.du-form-own-item {
+    color: $duFormOwnItemColor;
+    font-size: $duFormOwnItemFontSize;
+    padding: $duFormOwnItemPadding;
+    display: block;
+    .du-form-hd {
+        margin-bottom: $duFormOwnHdMarginBottom;
+        width: 100%;
+    }
+    .du-form-bd {
+        position: relative;
+        display: block;
+        line-height: $duFormOwnHeight;
+    }
+
+    .du-form-del-value {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        height: 100%;
+        width: $duFormOwnDelValueWidth;
+    }
+
+    .du-iconimg-rmb {
+        overflow: visible;
+        position: relative;
+        z-index: 1;
+        vertical-align: $duFormOwnIconImgRmbVerticalAlign;
+    }
+
+    .du-iconimg-close {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: $duFormOwnIconImgCloseMarginTop;
+        margin-left: $duFormOwnIconImgCloseMarginLeft;
+    }
+
+    .du-form-input {
+        font-size: $duFormOwnInputFontSize;
+        margin-left: $duFormOwnInputMarginLeft;
+        width: $duFormOwnInputWidth;
+        height: auto;
+        line-height: $duFormOwnHeight;
+        vertical-align: top;
+    }
+
+    .du-form-placeholder {
+        position: absolute;
+        top: $duFormOwnPlaceholderTop;
+        left: $duFormOwnPlaceholderLeft;
+        width: $duFormOwnInputWidth;
+        font-size: $duFormOwnPlaceholderFontSize;
+        height: $duFormOwnHeight;
+    }
 }
