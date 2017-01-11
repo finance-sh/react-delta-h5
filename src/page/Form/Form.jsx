@@ -89,7 +89,7 @@ class FormPage extends React.Component {
                                             />
                                         </div>
                                     </div>
-                                    <div className="du-form-tip du-form-tip-error">错误提示</div>
+                                    <div className="du-form-tip du-form-tip-error"><span className="du-iconimg du-iconimg-warn"></span>错误提示</div>
                                     <div className="du-form-sub">其他文案</div>
                                 </div> 
 
@@ -107,7 +107,7 @@ class FormPage extends React.Component {
                                             <div className="du-form-ft"><span className="du-iconfont du-icon-arrow-right-thick"></span></div>
                                         </a>
                                     </div>
-                                    <div className="du-form-tip du-form-tip-error">验证提示</div>
+                                    <div className="du-form-tip du-form-tip-error"><span className="du-iconimg du-iconimg-warn"></span>错误提示</div>
                                 </div>
 
                                 <div className="du-form">
@@ -115,7 +115,7 @@ class FormPage extends React.Component {
                                         <div className="du-form-hd">标题</div>
                                         <div className="du-form-bd"><input className="du-form-input" type="text" placeholder="说明文字" /></div>
                                     </div>
-                                    <div className="du-form-tip du-form-tip-error">验证提示</div>
+                                    <div className="du-form-tip du-form-tip-error"><span className="du-iconimg du-iconimg-warn"></span>错误提示</div>
                                 </div> 
 
                                 <div className="du-form">
