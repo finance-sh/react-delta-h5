@@ -4,7 +4,7 @@
   "description": "常用的react组件",
   "main": "",
   "scripts": {
-    "dev": "webpack-dev-server --progress --profile --colors --hot --port 8080",
+    "dev": "webpack-dev-server --progress --profile --colors --hot --port 9090",
     "winBuild": "SET BABEL_ENV=production && webpack --progress --profile --colors --config webpack.config.prd.js",
     "build": "BABEL_ENV=production && webpack --progress --profile --colors --config webpack.config.prd.js"
   },

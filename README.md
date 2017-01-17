@@ -1,15 +1,4 @@
 
-####  使用说明
-
-JS组件调用
-```javascript
-import DuWrap from 'react-deltaui/src/components/DuWrap';
-```
-
-CSS组件无需手动引用
-
-> 业务代码中的className勿用`du`开头命名 
-
 ##REACT Delta
 
 ####  webpack 配置
@@ -49,6 +38,17 @@ loaders: [
 
 ```
 
+####  使用说明
+
+JS组件调用
+```javascript
+import DuWrap from 'react-deltaui/src/components/DuWrap';
+```
+
+CSS组件无需手动引用
+
+> 业务代码中的className勿用`du`开头命名 
+> 开发勿使用标签定义样式
 
 
 ####  版本升级说明
@@ -75,5 +75,8 @@ v1.3.4
 v1.3.5
 > 表单格式化、修改RMB图标
 > loading组件文字可配置
+
+v1.3.6
+> Form增加duFormPlaceHolderFontSize配置
 
 

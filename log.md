@@ -77,7 +77,7 @@ buttonFont -> Font
 
 2017/1/16
 调整FORM表单初始化样式
-
+Form增加duFormPlaceHolderFontSize配置
 
 
 
