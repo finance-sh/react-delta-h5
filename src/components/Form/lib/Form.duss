@@ -52,6 +52,7 @@
 
 .du-form-placeholder {
     color: $duFormPlaceHolderColor;
+    font-size: $duFormPlaceHolderFontSize;
 }
 
 .du-form-input {
