@@ -13,12 +13,13 @@ $duFormFtPaddingLeft             : $duItemFtPaddingLeft;
 $duFormFtIconFontSize            : $duItemFtIconFontSize;
 $duFormFtIconColor               : $duItemFtIconColor;
 
-$duFormPlaceHolderColor          : #A9A9A9;
-$duFormPlaceHolderFontSize       : $duFormInputFontSize;
-
 /* duFormHeight - duFormPadding*2 */
 $duFormInputHeight               : 60px;
 $duFormInputFontSize             : 28px;
+
+/* placeholder */ 
+$duFormPlaceHolderColor          : #A9A9A9;
+$duFormPlaceHolderFontSize       : $duFormInputFontSize;
 
 /* tip */
 $duFormTipFontSize               : 24px;

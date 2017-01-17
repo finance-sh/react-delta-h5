@@ -1,17 +1,22 @@
 
 /* css组件-variable */
-@import "../../DeltaVariable/du-global.duss";
-@import "../../DeltaVariable/du-button.duss";
-@import "../../DeltaVariable/du-panel.duss";
-@import "../../DeltaVariable/du-flex.duss";
-@import "../../DeltaVariable/du-footer.duss";
-@import "../../DeltaVariable/du-list.duss";
-@import "../../DeltaVariable/du-form.duss";
+
+    @import "../../DeltaVariable/du-global.duss";
+    @import "../../DeltaVariable/du-button.duss";
+
+    @import "../../DeltaVariable/du-panel.duss";
+    @import "../../DeltaVariable/du-flex.duss";
+
+    @import "../../DeltaVariable/du-list.duss";
+    @import "../../DeltaVariable/du-form.duss";
+
+    @import "../../DeltaVariable/du-footer.duss";
 
 /* js组件-variable */
-@import "../../DeltaVariable/du-header.duss";
-@import "../../DeltaVariable/du-dialog.duss";
-@import "../../DeltaVariable/du-loading.duss";
-@import "../../DeltaVariable/du-toast.duss";
-@import "../../DeltaVariable/du-tabbar.duss";
-@import "../../DeltaVariable/du-actionsheet.duss";
+
+    @import "../../DeltaVariable/du-header.duss";
+    @import "../../DeltaVariable/du-dialog.duss";
+    @import "../../DeltaVariable/du-loading.duss";
+    @import "../../DeltaVariable/du-toast.duss";
+    @import "../../DeltaVariable/du-tabbar.duss";
+    @import "../../DeltaVariable/du-actionsheet.duss";
