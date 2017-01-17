@@ -79,4 +79,6 @@ v1.3.5
 v1.3.6
 > Form增加duFormPlaceHolderFontSize配置
 
-
+v1.3.7
+> 格式化variable文件
+> form配置修改引用顺序
