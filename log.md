@@ -44,6 +44,7 @@ duPanelHdBackGroundColor
 duTabbarSelectLabelColor -> duTabbarItemSelectLabelColor
 duTabBarbackGroundColor -> duTabBarBackGroundColor
 buttonFont -> Font
+
 -----------------------------------------------
 
 2017/1/7
@@ -70,6 +71,18 @@ buttonFont -> Font
 
 *. 开发检查工具 查找delta编译后带'$'value值报错提示
 *. precss 没有css运算处理
+
+* 2017/1/12
+1. loading组件文字可配置
+
+2017/1/16
+调整FORM表单初始化样式
+
+
+
+
+
+
 
 
 

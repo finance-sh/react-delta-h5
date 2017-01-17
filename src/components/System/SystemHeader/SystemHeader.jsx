@@ -14,7 +14,7 @@ var Header = React.createClass({
     },
     getDefaultProps: function() {
         return {
-            title: '百度钱包',
+            title: 'Delta UI',
             suppleTitle: '',
             suppleHandle: function() {},
             returnBtnDisplay: true

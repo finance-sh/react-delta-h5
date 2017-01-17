@@ -35,12 +35,12 @@ $duFormTipDefaultLineColor       : $duItemLineColor;
 $duFormOwnItemColor              : inherit;
 $duFormOwnItemFontSize           : 28px;
 $duFormOwnItemPadding            : 30px 30px 20px;
-$duFormOwnHeight                 : 92px;
+$duFormOwnHeight                 : 100px;
 
 $duFormOwnHdMarginBottom         : 20px;
 $duFormOwnDelValueWidth          : 70px;
 
-$duFormOwnInputFontSize          : 92px;
+$duFormOwnInputFontSize          : 100px;
 $duFormOwnInputMarginLeft        : 10px;
 $duFormOwnInputWidth             : 560px;
 
@@ -48,6 +48,6 @@ $duFormOwnIconImgRmbVerticalAlign: -25%;
 $duFormOwnIconImgCloseMarginTop  : -16px;
 $duFormOwnIconImgCloseMarginLeft : -16px;
 
-$duFormOwnPlaceholderTop         : -30px;
+$duFormOwnPlaceholderTop         : -46px;
 $duFormOwnPlaceholderLeft        : 35px;
-$duFormOwnPlaceholderFontSize    : 36px;
+$duFormOwnPlaceholderFontSize    : 100px;

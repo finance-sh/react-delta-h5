@@ -1,7 +1,7 @@
 @import "../../Delta/lib/fn.duss";
 
 .du-form {
-    position: relative;   
+    position: relative;
     &:after {
         @mixin setBottomLine $duFormLineColor;
         left: $duFormLineLeft;
@@ -79,7 +79,8 @@
 }
 
 .du-form-sub,
-.du-form-tip-default {
+.du-form-tip-default,
+.du-form-tip-error {
     height: $duFormTipHeight;
     color: $duFormTipDefaultColor;
     &:before {
@@ -89,7 +90,6 @@
 }
 
 .du-form-tip-error {
-    height: $duFormTipHeight;
     color: $duFormTipErrorColor;
     &:before {
         @mixin setTopLine $duFormTipErrorLineColor;
