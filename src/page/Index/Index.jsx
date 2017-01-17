@@ -30,7 +30,7 @@ const IndexPage = React.createClass({
             <div className="du-page-index">
                 <SystemHeader returnBtnDisplay={false} />
                 <DuWrap>
-                    <SystemWrap pageName="index" subName="Delta UI">
+                    <SystemWrap pageName="Index">
                         <div className="group">
 
                             <div className="col"><Link to="/button"><i className="du-system-iconfont du-system-icon-button"></i>button</Link></div>

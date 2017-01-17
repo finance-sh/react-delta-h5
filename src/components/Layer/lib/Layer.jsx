@@ -45,7 +45,7 @@ var OlayComponent = React.createClass({
         }
         return (
             <div className={className} style={{height: height}} onClick={this.handleClick}>
-                <LayerComponent {...this.props} type={this.props.type}/>
+                <LayerComponent {...this.props} type={this.props.type} />
             </div>
         );
     }
@@ -60,7 +60,7 @@ var LayerComponent = React.createClass({
                 <div className="du-loading" ref="layer">
                     <div className="du-loading-bd">
                         <LoadingIconComponent />
-                        <LoadingTxtComponent />
+                        <LoadingTxtComponent loadingText={this.props.text} />
                     </div>
                 </div>
             );
@@ -88,7 +88,7 @@ var LoadingIconComponent = React.createClass({
 var LoadingTxtComponent = React.createClass({
     render: function() {
         return (
-            <div className="du-loading-text">正在加载...</div>
+            <div className="du-loading-text">{this.props.loadingText}</div>
         );
     }
 });
@@ -124,14 +124,15 @@ function Layer(options) {
         }
     };
     if (options.type === 'toast') {
-        ReactDOM.render(    
+        ReactDOM.render(
             <ToastComponent outTime={options.outTime || 2000} toastStr={options.toastStr} closeLayer={closeLayer} surefun={options.sureFun}/>,
             layerRootDom
         );
     }
     else if (options.type === 'loading') {
+        var loadingText = options.text;
         ReactDOM.render (
-            <OlayComponent type="loading"/>,
+            <OlayComponent type="loading" text={loadingText} />,
             layerRootDom
         );
     }

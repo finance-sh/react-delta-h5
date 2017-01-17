@@ -13,7 +13,7 @@ import SystemWrap from '../../components/system/SystemWrap/SystemWrap';
 class FormPage extends React.Component {
 
     static defaultProps = {
-        placeholder: '模拟的PlaceHolde'
+        placeholder: '0.模拟PH'
     }
 
     constructor(props) {

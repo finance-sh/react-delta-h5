@@ -21,10 +21,10 @@ const LoadingPage = React.createClass({
         style.unuse();
     },
     case1: function () {
-        var loadingLayer = Loading();
+        var loadingLayer = Loading('可配置文案');
         setTimeout(function() {
             loadingLayer.closeLayer();
-        }, 5000);
+        }, 3000);
     },
     render: function () {
         var that = this;

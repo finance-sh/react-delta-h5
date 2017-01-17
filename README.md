@@ -8,6 +8,8 @@ import DuWrap from 'react-deltaui/src/components/DuWrap';
 
 CSS组件无需手动引用
 
+> 业务代码中的className勿用`du`开头命名 
+
 ##REACT Delta
 
 ####  webpack 配置
@@ -47,6 +49,8 @@ loaders: [
 
 ```
 
+
+
 ####  版本升级说明
  v1.3
 > list组件样式升级，列表项由分为(hd/bd/ft)3部分组成 before改成bd after改为ft
@@ -63,4 +67,13 @@ v1.3.2
 > 表单组件增加单个panel样式及模拟placeholder相关交互、并转成ES6
 
 v1.3.3
-> 表单增加错误图标  
+> 
+
+v1.3.4 
+> 表单增加错误图标 
+
+v1.3.5
+> 表单格式化、修改RMB图标
+> loading组件文字可配置
+
+
