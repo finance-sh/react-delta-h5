@@ -7,17 +7,13 @@ import withRouter from 'react-router/lib/withRouter';
 import '../../Header/lib/Header.duss';
 
 var Header = React.createClass({
-    propTypes: {
-        title: React.PropTypes.string,
-        operation: React.PropTypes.string,
-        suppleHandle: React.PropTypes.func
-    },
     getDefaultProps: function() {
         return {
-            title: 'Delta UI',
             suppleTitle: '',
-            suppleHandle: function() {},
-            returnBtnDisplay: true
+            title: 'Delta UI',
+            isDisplay: true,
+            returnBtnDisplay: true,
+            suppleHandle: function() {}
         }
     },
     backEvent: function(e) {
@@ -34,9 +30,13 @@ var Header = React.createClass({
         this.props.suppleHandle();
     },
     render: function() {
-
         var returnNode = '';
         var headerTPL;
+
+        if (!this.props.isDisplay) {
+            return null;
+        }
+
         if(this.props.returnBtnDisplay) {
             returnNode = (
                 <a title="返回" className="du-header-return" href="javascript:void(0)" onClick={this.backEvent}><i className="du-iconfont du-icon-arrow-left-thick"></i></a>
@@ -50,7 +50,6 @@ var Header = React.createClass({
             </header>
         );
         return headerTPL;
-
     }
 });
 

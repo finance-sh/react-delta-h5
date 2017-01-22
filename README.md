@@ -85,3 +85,6 @@ v1.3.7
 
 v1.3.8 
 > 兼容react嵌套多一层div时，图标垂直居中
+
+v1.3.9
+> Header add isDisplay
