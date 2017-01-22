@@ -79,7 +79,8 @@ buttonFont -> Font
 调整FORM表单初始化样式
 Form增加duFormPlaceHolderFontSize配置
 
-
+2017/01/22
+兼容react嵌套多一层div时，图标垂直居中
 
 
 
