@@ -152,6 +152,18 @@ const ListPage = React.createClass({
                                         <div className="case1">说明</div>
                                     </div>
                                 </div>
+                                
+                                <div className="du-item du-item-side">
+                                    <div className="du-item-hd">标题</div>
+                                    <div className="du-item-bd">
+                                        <div className="case1">文字主题,文字主题</div>
+                                        <div className="case1">文字主题</div>
+                                    </div>
+                                    <div className="du-item-ft">
+                                        <div className="case1">水平方向</div>
+                                        <div className="case1">说明</div>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
