@@ -83,8 +83,8 @@ Form增加duFormPlaceHolderFontSize配置
 兼容react嵌套多一层div时，图标垂直居中
 Header add isDisplay
 
-
-
+2017/02/08
+修复国产手机出现图标被截问题
 
 
 

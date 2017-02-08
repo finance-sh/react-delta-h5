@@ -8,7 +8,7 @@ $duLoadingBdBorderRadius      : 5px;
 
 /* snake */
 $duLoadingSnakeBorderColor    : rgb(204,204,204);
-$duLoadingSnakeBorderWidth    : 2px;
+$duLoadingSnakeBorderWidth    : 3px;
 $duLoadingSnakeWidth          : 35px;
 $duLoadingSnakeHeight         : 35px;
 $duLoadingSnakeSpeed          : 1.2s;
