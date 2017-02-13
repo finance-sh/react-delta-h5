@@ -26,6 +26,7 @@
 /* shade */ 
 .du-toast-shade {
     @mixin setShade;
+    position: absolute;
     z-index: 9998;
     background: $duToastshadeBackgroundColor;
 }

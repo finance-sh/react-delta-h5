@@ -1,12 +1,11 @@
 {
   "name": "react-deltaui",
-  "version": "1.3.11",
+  "version": "1.3.12",
   "description": "常用的react组件",
   "main": "",
   "scripts": {
     "dev": "webpack-dev-server --progress --profile --colors --hot --port 8888",
-    "winBuild": "SET BABEL_ENV=production && webpack --progress --profile --colors --config webpack.config.prd.js",
-    "build": "BABEL_ENV=production && webpack --progress --profile --colors --config webpack.config.prd.js"
+    "build": "cross-env NODE_ENV=production BABEL_ENV=production webpack --colors --config webpack.config.prd.js"
   },
   "author": "oilchris",
   "license": "ISC",
@@ -21,6 +20,7 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-react-hmre": "^1.1.1",
     "babel-preset-stage-0": "^6.5.0",
+    "cross-env": "^3.1.3",
     "clean-webpack-plugin": "^0.1.10",
     "css-loader": "^0.23.0",
     "eslint": "^1.10.3",
