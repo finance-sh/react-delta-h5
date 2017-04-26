@@ -22,11 +22,6 @@ a {
     color: $globalLinkColor
 }
 
-html,
-body {
-    height: 100%
-}
-
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
