@@ -1,75 +1,119 @@
 /**
  * Created by delta
  */
- 
-var projectName = 'react-delta-ui';
+
+
+var fs = require('fs');
 var path = require('path');
 var webpack = require('webpack');
-var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 var CleanPlugin = require('clean-webpack-plugin'); // 清理文件夹
-// 一些路径信息
+
+// path
 var ROOT_PATH = path.resolve(__dirname);
-var NODE_PATH = path.resolve(ROOT_PATH, 'node_modules');
+var APP_PATH = path.resolve(ROOT_PATH, 'src');
+var BUILD_PATH = path.resolve(ROOT_PATH, 'examples');
+
+var NODE_PATH = path.resolve(ROOT_PATH,'node_modules');
+var TEMPLATE_PATH = path.resolve(ROOT_PATH,'./src/index.tpl.html');
+
+// adaptive
+var ADAPTIVE_PATH = path.resolve(NODE_PATH,'adaptive.js/js/adaptive.js');
+var adaptiveText = fs.readFileSync(ADAPTIVE_PATH,'utf8');
+
+// postcss
+var precss = require('precss');
+var autoprefixer = require('autoprefixer');
+var px2rem = require('postcss-plugin-px2rem');
+var stylelint = require("stylelint");
 
 var REACT = path.resolve(NODE_PATH, 'react/dist/react.min.js');
 var REACTDOM = path.resolve(NODE_PATH, 'react-dom/dist/react-dom.min.js');
-var fs = require('fs');
 
 module.exports = {
-    context: path.join(__dirname, 'app'),
+
+    context: APP_PATH,
+
+    // 获取项目入口JS文件
     entry: {
-        app: './app.jsx',
+        app: './App.jsx',
         vendors: [
             'react',
             'react-dom',
             'react-router'
         ]
     },
+    
     output: {
-        // 文件输出目录
-        path: path.resolve(__dirname, 'dist'),
-        // 根据entry的入口名称生成多个js文件
-        filename: '/assets/' + projectName + '/js/[name]_[hash:8].js',
-        chunkFilename: '/assets/' + projectName + '/js/[name]_[hash:8]_chunk.js',
-        // 用于配置文件发布路径，如CDN或本地服务器
+        path: BUILD_PATH,
+        filename: '[name]_[hash:8].js',
+        chunkFilename: '[name]_[hash:8]_chunk.js',
         publicPath: ''
     },
 
+    // 各种加载器，让各种文件格式可用require引用
     module: {
-        // noParse: [REACT],
+        noParse: [REACT],
         loaders: [
             {
+                test: /\.duss$/,
+                // loader: ExtractTextPlugin.extract(['style'], 'css!postcss'),
+                loaders: [
+                    'style-loader',
+                    'css-loader',
+                    'postcss-loader'
+                ],
+                exclude: /\.useable\.duss|node_modules$/
+            },
+            {
+                test: /\.useable\.duss$/,
+                loaders: [
+                    'style-loader/useable',
+                    'css-loader',
+                    'postcss-loader'
+                ],
+                exclude: /node_modules/
+            },
+            {
+                test: /\.(png|jpg)$/,
+                loader: 'url?limit=8192',
+                exclude: /node_modules/
+            },
+            {
                 test: /\.js[x]?$/,
-                exclude: /node_modules/,
-                loader: 'babel'
+                loader: 'babel',
+                exclude: /node_modules/
             },
-            {
-                test: /\.less$/,
-                exclude: /\.useable\.less$/,
-                loader: 'style!css!postcss!less'
-            },
-            {
-                test: /\.css/,
-                loader: ExtractTextPlugin.extract('style', 'css', 'postcss')
-            },
-            {
-                test: /\.useable\.less$/,
-                exclude: /node_modules/,
-                loader: 'style/useable!css!postcss!less'
-            },
-            {
-                test: /\.(png|jpg|gif)$/,
-                loader: 'file-loader?name=/assets/' + projectName + '/img/[name]_[hash:8].[ext]'
-                // loader: 'url?limit=1024'
-            }
         ]
     },
-    postcss: [
-        autoprefixer
-    ],
+
+    postcss: function (webpack) {
+        var option = {
+            px2rem: {
+                minPixelValue: 2
+            }
+        };
+        return [
+            precss,
+            autoprefixer,
+            px2rem(option.px2rem),
+            stylelint({
+                rules: {
+                    'max-empty-lines': 2,
+                    'property-no-unknown': [ true ],
+                    'unit-no-unknown': [ true ]
+                } 
+            })
+        ];
+    },
+
     resolve: {
+        // 查找module的话从这里开始查找
+        root: path.resolve(ROOT_PATH, 'src'),
+         // 自动扩展文件后缀名，意味着我们require模块可以省略不写后缀名
         extensions: [
             '',
             '.js',
@@ -80,27 +124,36 @@ module.exports = {
             'react-dom': REACTDOM
         }
     },
+
+    // 生成sourcemap,便于开发调试
+    // devtool: 'cheap-source-map',
+
     plugins: [
-        // 查找相等或近似的模块，避免在最终生成的文件中出现重复的模块
-        new webpack.optimize.DedupePlugin(),
-        
+
         new webpack.DefinePlugin({
             DEBUG: false
         }),
-        new ExtractTextPlugin('app.min.css'),
+        new CleanPlugin(['examples']),
 
-        new CleanPlugin(['dist']),
-
-        new webpack.optimize.CommonsChunkPlugin('vendors', '/assets/' + projectName + '/js/vendors_[hash:8].js'),
-        // 使用uglifyJs压缩JS代码
-        new webpack.optimize.UglifyJsPlugin({
-            minimize: false
+        new webpack.optimize.CommonsChunkPlugin({
+            names: ['vendors'],
+            filename: '[name]_[hash:8].js'
         }),
-        // 把入口里面的数组打包成vendors.js
+
+        // 使用uglifyJs压缩JS代码
+        /* eslint-disable fecs-camelcase */
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false,
+                drop_debugger: true,
+                drop_console: true
+            }
+        }),
+
         new HtmlWebpackPlugin({
             title: 'Delta UI',
-            template: path.join(__dirname, './app/index.tpl.html'),
-            filename: './template/' + projectName + '/index.html',
+            template: TEMPLATE_PATH,
+            filename: './index.html',
             // chunks这个参数告诉插件要引用entry里面的哪几个入口
             chunks: [
                 'vendors',
@@ -110,7 +163,10 @@ module.exports = {
                 minifyJS: true,
                 removeComments: true,
                 minifyCSS: true
-            }
+            },
+            inject: 'body',
+            chunksSortMode: 'dependency',
+            adaptive: adaptiveText
         })
     ]
 };

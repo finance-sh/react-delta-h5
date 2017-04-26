@@ -73,6 +73,7 @@
 }
 .du-dialog-shade {
     @mixin setShade;
+    position: absolute;
     z-index: 9998;
     background: $duDialogshadeBackgroundColor;
 }

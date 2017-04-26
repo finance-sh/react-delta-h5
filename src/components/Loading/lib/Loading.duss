@@ -38,6 +38,7 @@
 /* shade */ 
 .du-loading-shade {
     @mixin setShade;
+    position: absolute;
     z-index: 9998;
     background: $duLoadingshadeBackgroundColor;
 }

@@ -16,6 +16,7 @@ import './Layer.duss';
 var OlayComponent = React.createClass({
     componentDidMount: function() {
         window.scrollTo(0, 0);
+        this.refs.layerShade.style.height = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight) + 'px';
     },
     handleClick: function(evt) {
         var target = evt.target;
@@ -32,7 +33,6 @@ var OlayComponent = React.createClass({
         }
     },
     render: function() {
-        var height = Math.max(document.documentElement.offsetHeight, window.innerHeight);
         var className = '';
         if (this.props.type === 'loading') {
             className = 'du-loading-shade';
@@ -44,7 +44,7 @@ var OlayComponent = React.createClass({
             className += ' ' + this.props.addClassname
         }
         return (
-            <div className={className} style={{height: height}} onClick={this.handleClick}>
+            <div className={className} ref="layerShade" onClick={this.handleClick}>
                 <LayerComponent {...this.props} type={this.props.type} />
             </div>
         );
@@ -97,13 +97,14 @@ var ToastComponent = React.createClass({
         setTimeout(function() {
             this.props.closeLayer && this.props.closeLayer();
         }.bind(this), this.props.outTime);
+        this.refs.toastShade.style.height = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight) + 'px';
     },
     componentWillUnmount: function() {
         this.props.surefun && this.props.surefun();
     },
     render: function() {
         return (
-            <div className="du-toast-shade">
+            <div className="du-toast-shade" ref="toastShade">
                 <div className="du-toast">
                     <div className="du-toast-bd">{this.props.toastStr}</div>
                 </div>

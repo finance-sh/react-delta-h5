@@ -1,8 +1,8 @@
 .du-iconimg {
-    display: inline-block;
     vertical-align: top;
+    display: inline-block;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left top;
     background-size: contain;
     overflow: hidden;
 }
