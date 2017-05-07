@@ -93,4 +93,8 @@ v1.3.11
 > 修复国产手机出现图标被截问题
 
 v1.3.13
-移除base.duss html,body{height:100%}
+> 移除base.duss html,body{height:100%}
+
+v1.4.1
+> 更改loading图片
+> Toast支持隐藏后回调

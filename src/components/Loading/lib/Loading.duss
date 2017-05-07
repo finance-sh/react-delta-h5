@@ -15,19 +15,15 @@
 }
 
 .du-loading-snake {
-    border-radius: 50%;
+    vertical-align: middle;
     display: inline-block;
-    animation: du-spinner-rotate $duLoadingSnakeSpeed infinite linear;
-    border: $duLoadingSnakeBorderWidth solid transparent;
-    border-top-color: $duLoadingSnakeBorderColor;
-    border-left-color: $duLoadingSnakeBorderColor;
-    border-bottom-color: $duLoadingSnakeBorderColor;
     width: $duLoadingSnakeWidth;
     height: $duLoadingSnakeHeight;
+    animation: du-spinner-rotate $duLoadingSnakeSpeed 0s linear infinite;
 }
 
 .du-loading-text {
-    vertical-align: top;
+    vertical-align: middle;
     display: inline-block;
     color: #FFF;
     text-align: center;

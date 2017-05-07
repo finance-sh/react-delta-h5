@@ -7,12 +7,10 @@ $duLoadingBdPadding           : 20px 30px;
 $duLoadingBdBorderRadius      : 5px;
 
 /* snake */
-$duLoadingSnakeBorderColor    : rgb(204,204,204);
-$duLoadingSnakeBorderWidth    : 3px;
-$duLoadingSnakeWidth          : 35px;
-$duLoadingSnakeHeight         : 35px;
+$duLoadingSnakeWidth          : 32px;
+$duLoadingSnakeHeight         : 32px;
 $duLoadingSnakeSpeed          : 1.2s;
 
 /* text  */
-$duLoadingTextMarginLeft      : 10px;
+$duLoadingTextMarginLeft      : 15px;
 $duLoadingTextFontSize        : 28px;

@@ -81,7 +81,7 @@ var LayerComponent = React.createClass({
 var LoadingIconComponent = React.createClass({
     render: function() {
         return (
-            <div className="du-loading-snake"></div>
+            <div className="du-iconimg du-iconimg-loading du-loading-snake"></div>
         );
     }
 });

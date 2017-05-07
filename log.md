@@ -89,9 +89,9 @@ Header add isDisplay
 2017/04/26
 移除base.duss html,body{height:100%}
 
-
-
-
+2017/05/07
+更改loading转菊花图片
+Toast支持隐藏后回调
 
 
 

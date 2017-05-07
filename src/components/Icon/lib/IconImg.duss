@@ -24,3 +24,9 @@
     width: 25px;
     height: 30px;
 }
+
+.du-iconimg-loading {
+    background-image: url(../../Icon/lib/img/icon-loading.png);
+    width: 36px;
+    height: 36px;
+}
